@@ -1,0 +1,55 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+header {
+  width: 1600px;
+  height: 80px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.logo {
+  position: absolute;
+  padding-left: 215px;
+  margin-top: 24px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: #2196f3;
+}
+.logo > span {
+  color: black;
+}
+.menu-item {
+  display: inline-block;
+
+}
+.menu {
+  position: absolute;
+  margin-left: 453px;
+  padding-top: 24px;
+  line-height: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+ 
+}
+.kontakt {
+  position: absolute;
+  padding-top: 24px;
+  margin-left: 1078px;
+  list-style-type: none;
+}
+
+h1 {
+  width: 696px;
+  padding-left: 452px;
+  padding-top: 200px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

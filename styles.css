@@ -1,61 +1,38 @@
 body {
   font-family: "Raleway", sans-serif;
-
   font-family: "Roboto", sans-serif;
+  color: #212121;
 }
 header {
-  margin-top: 0%;
   width: 1600px;
   height: 80px;
+  font-weight: 500;
+  font-size: 14px;
 }
 .logo {
+  position: absolute;
+  padding-left: 215px;
   margin-top: 24px;
-  margin-left: 204px;
-  width: 156px;
-  height: 31px;
-  left: 204px;
-  top: 24px;
-
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-
   color: #2196f3;
 }
 .logo > span {
   color: black;
 }
-.menu {
-  width: 254px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
+a {
   text-decoration: none;
-  list-style: none;
-  list-style-position: outside;
+  color: inherit;
 }
-.h1 {
+a:hover {
+  color: blue;
+}
+.footer {
+  background-color: #757575;
   width: 1600px;
-  height: 600px;
-  background: #2f303a;
+  height: 252px;
+  top: 1628px;
 }
-h1 {
-  width: 696px;
-  padding-left: 452px;
-  padding-top: 200px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-.description {
-  margin-left: 215px;
-  margin-top: 94px;
+.portfolio_button {
 }
