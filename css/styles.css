@@ -3,25 +3,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
-.header {
-  width: 1600px;
-  height: 80px;
-  font-weight: 500;
-  font-size: 14px;
-  background-color: #757575;
-}
-.logo {
-  position: absolute;
-  padding-left: 215px;
-  margin-top: 24px;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  color: #2196f3;
-}
-.logo > span {
-  color: black;
-}
 a {
   text-decoration: none;
   color: inherit;
@@ -29,11 +10,101 @@ a {
 a:hover {
   color: blue;
 }
-.footer {
-  background-color: #757575;
+button:hover {
+  color: blue;
+  cursor: pointer;
+  background-color: #2196f3;
+}
+
+header {
+  width: 1600px;
+  height: 80px;
+}
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: #2196f3;
+  padding-bottom: 20px;
+  padding-top: 60px;
+}
+.logo > span {
+  color: black;
+}
+.menu {
+  padding-left: 453px;
+}
+.menu li {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline;
+  float: left;
+  margin: 0px 46px;
+}
+.kontakt {
+  padding-left: 1078px;
+}
+.kontakt li {
+  display: inline;
+  margin: 0px 50px;
+}
+.h1 {
+  width: 1600px;
+  height: 600px;
+  background-color: #2f303a;
+}
+.h1_description {
+  width: 696px;
+  height: 120px;
+  font-size: 44px;
+  line-height: 116%;
+  padding-top: 200px;
+  padding-left: 452px;
+  box-align: top;
+  align: Center;
+  color: #ffffff;
+  letter-spacing: 6%;
+}
+.h1_button {
+  width: 200px;
+  height: 50px;
+  top: 430px;
+  margin-left: 700px;
+  background-color: #f5f4fa;
+  font-size: 16px;
+}
+.h3_title {
+  font-size: 16px;
+}
+.h3_text {
+  font-size: 14px;
+  line-height: 146%;
+  color: #757575;
+}
+.h2_title {
+  font-size: 36px;
+}
+.character {
+  font-size: 16px;
+}
+.character_description {
+  font-size: 16px;
+  color: #757575;
+}
+footer {
   width: 1600px;
   height: 252px;
-  top: 1628px;
+  background-color: #2f303a;
+}
+address {
+  color: #ffffff;
 }
 .portfolio_button {
+  margin-left: 510px;
+}
+
+.portfolio_button ul li {
+  display: inline;
+  float: left;
+  margin: 0px 8px;
 }

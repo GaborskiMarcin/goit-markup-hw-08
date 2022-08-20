@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="nauka HTML" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,9 +13,9 @@
     />
   </head>
   <body>
-    <header>
+    <header >
       <a class="logo" href="#WebStudio">Web<span>Studio</span></a>
-      <nav>
+      <nav >
         <ul class="menu">
           <li><a href="#">Agencja </a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -29,35 +29,37 @@
     </header>
     <main>
       <section class="h1">
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługę</button>
+        <h1 class="h1_description">
+          EFEKTYWNE ROZWIĄZANIA </br> DLA WASZEGO BIZNESU
+        </h1>
+        <button class="h1_button" type="button">Zamów usługę</button>
       </section>
-      <section class="description">
-        <ul class="description-list">
+      <section>
+        <ul>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="h3_title">LOREM IPSUM</h3>
+            <p class="h3_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="h3_title">LOREM IPSUM</h3>
+            <p class="h3_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="h3_title">LOREM IPSUM</h3>
+            <p class="h3_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="h3_title">LOREM IPSUM</h3>
+            <p class="h3_text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -65,7 +67,7 @@
         </ul>
       </section>
       <section>
-        <h2>Czym się zajmujemy</h2>
+        <h2 class="h2_title">Czym się zajmujemy</h2>
         <ul>
           <li>
             <img
@@ -94,7 +96,7 @@
         </ul>
       </section>
       <section>
-        <h2>Nasz zespół</h2>
+        <h2 class="h2_title">Nasz zespół</h2>
         <ul>
           <li>
             <figure>
@@ -104,7 +106,7 @@
                 height="260"
                 alt="mężczyzna w ciemnej koszuli w okularach z laptopoen wrękach"
               />
-              <figcaption>John Doe <br />Product Designer</figcaption>
+              <figcaption><h4 class="character">John Doe </h4><p>Product Designer</p></figcaption>
             </figure>
           </li>
           <li>
@@ -115,7 +117,7 @@
                 height="260"
                 alt="kobieta, blondynka w marynarce"
               />
-              <figcaption>John Doe <br />Frontend Developer</figcaption>
+              <figcaption><h4 class="character">John Doe </h4><p class="character_description">Frontend Developer</p></figcaption>
             </figure>
           </li>
           <li>
@@ -126,7 +128,7 @@
                 height="260"
                 alt="mężczyzna w białej koszuli"
               />
-              <figcaption>John Doe <br />Marketing</figcaption>
+              <figcaption><h4 class="character">John Doe </h4><p class="character_description">Marketing</p></figcaption>
             </figure>
           </li>
           <li>
@@ -137,17 +139,17 @@
                 height="260"
                 alt="mężczyzna w okularach w czarnym podkoszulku"
               />
-              <figcaption>John Doe <br />UI Designer</figcaption>
+              <figcaption><h4 class="character">John Doe </h4><p class="character_description">UI Designer</p></figcaption>
             </figure>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <a href="#WebStudio">WebStudio</a>
+      <a class="logo" href="#WebStudio">Web<span>Studio</span></a><br/>
       <address id="Kontakt">
-        m.Warszawa, Aleje Jerozolimskie 21
-        <a href="mailto:info@devstudio.com">info@devstudio.com </a><br />
+        m.Warszawa, Aleje Jerozolimskie 21</br>
+        <a href="mailto:info@devstudio.com">info@devstudio.com </br>
         <a href="tel:+48111111111">+48 111 111 111</a>
       </address>
     </footer>
