@@ -3,11 +3,12 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
-header {
+.header {
   width: 1600px;
   height: 80px;
   font-weight: 500;
   font-size: 14px;
+  background-color: #757575;
 }
 .logo {
   position: absolute;
