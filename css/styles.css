@@ -1,19 +1,30 @@
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--basic_font-color);
+}
+:root {
+  --basic_font-color: #212121;
+  --second_font-color: black;
+  --third_font-color: white;
+  --text-color: #757575;
+  --link_color: blue;
+  --activ_button-color: #2196f3;
+  --button-color: #f5f4fa;
+  --background-color: #2f303a;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
 a:hover {
-  color: blue;
+  color: var(--link_color);
 }
+
 button:hover {
-  color: blue;
+  color: var(--link_color);
   cursor: pointer;
-  background-color: #2196f3;
+  background-color: var(--activ_button-color);
 }
 
 header {
@@ -24,12 +35,12 @@ header {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  color: #2196f3;
+  color: var(--activ_button-color);
   padding-bottom: 20px;
   padding-top: 60px;
 }
 .logo > span {
-  color: black;
+  color: var(--second_font-color);
 }
 .menu {
   padding-left: 453px;
@@ -41,17 +52,20 @@ header {
   float: left;
   margin: 0px 46px;
 }
-.kontakt {
+.menu li :visited {
+  color: var(--link_color);
+}
+.contact {
   padding-left: 1078px;
 }
-.kontakt li {
+.contact li {
   display: inline;
   margin: 0px 50px;
 }
 .h1 {
   width: 1600px;
   height: 600px;
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .h1_description {
   width: 696px;
@@ -60,14 +74,15 @@ header {
   line-height: 116%;
   padding-top: 200px;
   padding-left: 452px;
-  color: #ffffff;
+  text-align: center;
+  color: var(--third_font-color);
 }
 .h1_button {
   width: 200px;
   height: 50px;
   top: 430px;
   margin-left: 700px;
-  background-color: #f5f4fa;
+  background-color: var(--button-color);
   font-size: 16px;
 }
 .h3_title {
@@ -76,7 +91,7 @@ header {
 .h3_text {
   font-size: 14px;
   line-height: 146%;
-  color: #757575;
+  color: var(--text-color);
 }
 .h2_title {
   font-size: 36px;
@@ -86,15 +101,19 @@ header {
 }
 .character_description {
   font-size: 16px;
-  color: #757575;
+  color: var(--text-color);
 }
 footer {
   width: 1600px;
   height: 252px;
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
-address {
-  color: #ffffff;
+.address {
+  color: var(--third_font-color);
+  display: block;
+}
+.address > a {
+  display: block;
 }
 .portfolio_button {
   margin-left: 510px;
