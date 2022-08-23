@@ -9,7 +9,7 @@ body {
   --third_font-color: white;
   --text-color: #757575;
   --link_color: blue;
-  --link_visited: rgb(98, 44, 197);
+  --link_visited: rgb(149, 44, 197);
   --activ_button-color: #2196f3;
   --button-color: #f5f4fa;
   --background-color: #2f303a;
@@ -50,10 +50,10 @@ header {
   float: left;
   margin: 0px 46px;
 }
-.menu .menu_item :hover {
+.menu .menu_item:hover {
   color: var(--link_color);
 }
-.menu .menu_item :visited {
+.menu .menu_item:visited {
   color: var(--link_visited);
 }
 .contact {
