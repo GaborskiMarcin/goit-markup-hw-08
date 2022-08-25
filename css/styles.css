@@ -9,10 +9,10 @@ body {
   --third_font-color: white;
   --text-color: #757575;
   --link_color: blue;
-  --link_visited: rgb(149, 44, 197);
+  --link_visited: rgb(115, 44, 197);
   --activ_button-color: #2196f3;
   --button-color: #f5f4fa;
-  --background-color: #2f303a;
+  --background-color: rgb(48, 49, 59);
 }
 a {
   text-decoration: none;
@@ -28,7 +28,6 @@ button:hover {
 /*------Index_HEADER -------*/
 header {
   width: 1600px;
-  height: 80px;
 }
 .logo {
   font-family: "Raleway";
@@ -41,27 +40,20 @@ header {
 .logo > span {
   color: var(--second_font-color);
 }
-.menu {
-  padding-left: 453px;
+.menu_item {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
 }
-.menu li {
-  text-decoration: none;
-  display: inline-block;
-  float: left;
-  margin: 0px 46px;
+.menu_item:hover,
+.menu_item:active {
+  color: var(--activ_button-color);
 }
-.menu .menu_item:hover {
-  color: var(--link_color);
-}
-.menu .menu_item:visited {
-  color: var(--link_visited);
-}
-.contact {
-  padding-left: 1078px;
-}
+
 .contact li {
-  display: inline;
-  margin: 0px 50px;
+  color: var(--text-color);
+  cursor: pointer;
 }
 /*------Index_MAIN ---------*/
 .h1 {
@@ -124,7 +116,7 @@ footer {
 }
 
 .portfolio_button ul li {
-  display: inline;
+  display: inline-block;
   float: left;
   margin: 0px 8px;
 }
