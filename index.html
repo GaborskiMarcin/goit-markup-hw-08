@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="nauka HTML" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,156 +15,180 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="#WebStudio">Web<span>Studio</span></a>
-      <nav>
-        <ul class="menu">
-          <li><a href="#" class="menu_item">Agencja </a></li>
-          <li><a href="portfolio.html" class="menu_item">Portfolio</a></li>
-          <li><a href="#kontakt" class="menu_item">Kontakt</a></li>
+      <div class="container header">
+        <a class="logo" href="#WebStudio">Web<span>Studio</span></a>
+        <nav>
+          <ul class="menu">
+            <li class="menu_item current_page">
+              <a href="./index.html">Agencja </a>
+            </li>
+            <li class="menu_item">
+              <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu_item">
+              <a href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li class="contact_item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com </a>
+          </li>
+          <li class="contact_item">
+            <a href="tel:+48111111111">+48 111 111 111</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="h1">
-        <h1 class="h1_description">
-          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-        </h1>
-        <button class="h1_button" type="button">Zamów usługę</button>
+      <section class="index_section1 section">
+        <div class="container">
+          <h1 class="h1_description">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button class="h1_button" type="button">Zamów usługę</button>
+        </div>
       </section>
-      <section>
-        <ul>
-          <li>
-            <h3 class="h3_title">LOREM IPSUM</h3>
-            <p class="h3_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3 class="h3_title">LOREM IPSUM</h3>
-            <p class="h3_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3 class="h3_title">LOREM IPSUM</h3>
-            <p class="h3_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3 class="h3_title">LOREM IPSUM</h3>
-            <p class="h3_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
+      <section class="section index_section2">
+        <div class="container">
+          <ul class="lorem">
+            <li class="lorem_li">
+              <h3 class="h3_title">LOREM IPSUM</h3>
+              <p class="h3_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="lorem_li">
+              <h3 class="h3_title">LOREM IPSUM</h3>
+              <p class="h3_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="lorem_li">
+              <h3 class="h3_title">LOREM IPSUM</h3>
+              <p class="h3_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li class="lorem_li">
+              <h3 class="h3_title">LOREM IPSUM</h3>
+              <p class="h3_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2 class="h2_title">Czym się zajmujemy</h2>
-        <ul>
-          <li>
-            <img
-              src="images/box_01.jpg"
-              alt="biurko ze schetatem blokowym na kartce"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/box_02.jpg"
-              alt="komputer z obrazem z komurki"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/box_03.jpg"
-              alt="paleta kolorów na tablecie"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+      <section class="index_section3">
+        <div class="container">
+          <h2 class="index_section3_h2">Czym się zajmujemy</h2>
+          <ul class="image">
+            <li class="image_li">
+              <img
+                src="images/box_01.jpg"
+                alt="biurko ze schetatem blokowym na kartce"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="image_li">
+              <img
+                src="images/box_02.jpg"
+                alt="komputer z obrazem z komurki"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="image_li">
+              <img
+                src="images/box_03.jpg"
+                alt="paleta kolorów na tablecie"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2 class="h2_title">Nasz zespół</h2>
-        <ul>
-          <li>
-            <figure>
-              <img
-                src="images/img_01.jpg"
-                width="270"
-                height="260"
-                alt="mężczyzna w ciemnej koszuli w okularach z laptopoen wrękach"
-              />
-              <figcaption>
-                <h4 class="character">John Doe</h4>
-                <p>Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/img_02.jpg"
-                width="270"
-                height="260"
-                alt="kobieta, blondynka w marynarce"
-              />
-              <figcaption>
-                <h4 class="character">John Doe</h4>
-                <p class="character_description">Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/img_03.jpg"
-                width="270"
-                height="260"
-                alt="mężczyzna w białej koszuli"
-              />
-              <figcaption>
-                <h4 class="character">John Doe</h4>
-                <p class="character_description">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/img_04.jpg"
-                width="270"
-                height="260"
-                alt="mężczyzna w okularach w czarnym podkoszulku"
-              />
-              <figcaption>
-                <h4 class="character">John Doe</h4>
-                <p class="character_description">UI Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+      <section class="section index_section4">
+        <div class="container">
+          <h2 class="index_section4_h2">Nasz zespół</h2>
+          <ul class="index_section4_ul">
+            <li class="index_section4_li">
+              <figure>
+                <img
+                  src="images/img_01.jpg"
+                  width="270"
+                  height="260"
+                  alt="mężczyzna w ciemnej koszuli w okularach z laptopoen wrękach"
+                />
+                <figcaption>
+                  <h4 class="character">John Doe</h4>
+                  <p class="character_description">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="index_section4_li">
+              <figure>
+                <img
+                  src="images/img_02.jpg"
+                  width="270"
+                  height="260"
+                  alt="kobieta, blondynka w marynarce"
+                />
+                <figcaption>
+                  <h4 class="character">John Doe</h4>
+                  <p class="character_description">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="index_section4_li">
+              <figure>
+                <img
+                  src="images/img_03.jpg"
+                  width="270"
+                  height="260"
+                  alt="mężczyzna w białej koszuli"
+                />
+                <figcaption>
+                  <h4 class="character">John Doe</h4>
+                  <p class="character_description">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="index_section4_li">
+              <figure>
+                <img
+                  src="images/img_04.jpg"
+                  width="270"
+                  height="260"
+                  alt="mężczyzna w okularach w czarnym podkoszulku"
+                />
+                <figcaption>
+                  <h4 class="character">John Doe</h4>
+                  <p class="character_description">UI Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
-      <a class="logo" href="#WebStudio">Web<span>Studio</span></a>
-      <address class="address">
-        m.Warszawa, Aleje Jerozolimskie 21
-        <a href="mailto:info@devstudio.com">info@devstudio.com </a>
-        <a href="tel:+48111111111">+48 111 111 111</a>
-      </address>
+      <div class="container">
+        <a class="logo_footer" href="#WebStudio">Web<span>Studio</span></a>
+        <address class="address">
+          <p class="address_text">m.Warszawa, Aleje Jerozolimskie 21</p>
+          <a class="address_text" href="mailto:info@devstudio.com"
+            >info@devstudio.com
+          </a>
+          <a class="address_text" href="tel:+48111111111">+48 111 111 111</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
