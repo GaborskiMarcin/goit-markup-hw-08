@@ -332,8 +332,7 @@ footer {
 }
 .img_description > h4 {
   padding-bottom: 4px;
-  /* font-style: Bold; */
-  font-size: 18px;
+    font-size: 18px;
   line-height: 171%;
 }
 .img_description > p {
