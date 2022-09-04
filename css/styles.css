@@ -24,6 +24,7 @@ body {
   --body-background: #f5f4fa;
   --imag-border: #eeeeee;
   --header-border: #ececec;
+  --background-foto: rgba(47, 48, 58, 0.4);
 }
 a {
   text-decoration: none;
@@ -86,7 +87,7 @@ header {
   font-size: 14px;
   line-height: 114%;
   letter-spacing: 0.02em;
-
+  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -114,18 +115,28 @@ header {
   cursor: pointer;
   justify-content: space-between;
 }
+.header-icon {
+}
 /*------Index_MAIN ---------*/
 .index_section1 {
   min-width: 1200px;
   width: 100%;
   height: 600px;
-  background-color: var(--background-color);
+  background-color: var(--background-foto);
   display: flex;
   flex-direction: column;
-
   text-align: center;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url("/images/img_h1.jpg");
+  background-repeat: no-repeat;
 }
 .h1_description {
   font-weight: 900;
@@ -210,12 +221,21 @@ header {
 }
 .index_section4_li {
   width: 270px;
-  height: 368px;
+  height: 428px;
   display: flex;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.index_section4_icon {
+  /* display: inline-flex; */
+  justify-content: space-between;
+  margin: 0 5px 0;
+}
+.a {
+  margin-left: 32px;
+  display: inline-flex;
   
 }
 .character {
@@ -223,9 +243,8 @@ header {
   font-size: 16px;
   font-weight: 500;
   justify-content: center;
-  padding-top: 30px; 
+  padding-top: 30px;
   padding-bottom: 10px;
-  
 }
 .character_description {
   display: flex;
@@ -332,7 +351,7 @@ footer {
 }
 .img_description > h4 {
   padding-bottom: 4px;
-    font-size: 18px;
+  font-size: 18px;
   line-height: 171%;
 }
 .img_description > p {
