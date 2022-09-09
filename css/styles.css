@@ -86,10 +86,12 @@ header {
   fill: var(--activ_button-color);
 }
 .menu {
-  width: 261px;
-  display: flex;
-  margin-right: 345px;
-  justify-content: space-between;
+min-width: 606px;
+    display: flex;
+    /* margin-right: 345px; */
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 46px;
 }
 .menu_item {
   font-weight: 500;
