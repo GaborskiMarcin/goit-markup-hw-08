@@ -83,25 +83,30 @@ header {
   color: var(--activ_button-color);
   position: relative;
 }
+.current_page::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  border: 2px solid var(--activ_button-color);
+  background-color: var(--activ_button-color);
+}
 .current_page .header-icon {
   fill: var(--activ_button-color);
 }
 .menu {
   min-width: 606px;
   display: flex;
-  /* margin-right: 345px; */
+
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 46px;
 }
-.menu_line {
-  border: 2px solid var(--activ_button-color);
-  background-color: var(--activ_button-color);
-  width: 100%;
-  border-radius: 2px;
-  position: absolute;
-  top:45px
-}
+
 .menu_item {
   font-weight: 500;
   font-size: 14px;
@@ -154,7 +159,7 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
-
+position: relative;
   background-image: linear-gradient(
       0deg,
       rgba(48, 49, 59, 0.4) 0%,
@@ -191,6 +196,24 @@ header {
   cursor: pointer;
   background-color: #4c9fe4;
 }
+.backdrop {
+  border: 2px solid red;
+  width: 528px;
+  height: 581px;
+  position: absolute;
+  top:141px;
+  left:50% ;
+}
+.is-hiden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+
+
+
 .index_section2 {
   display: flex;
   min-width: 1200px;
@@ -212,11 +235,6 @@ header {
   background-color: var(--button-color);
   padding: 25px 100px;
 }
-/* .lorem_icon .icon:hover {
-  border-color: var(--activ_button-color);
-  border-radius: 4px;
-  fill: var(--activ_button-color);
-} */
 .lorem_li > use {
   display: flex;
   align-content: center;
@@ -343,26 +361,12 @@ header {
   align-items: center;
   fill: var(--icon_color);
 }
-/* .index_section5_li_chek {
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--activ_button-color);
-  fill: var(--activ_button-color);
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .index_section5_li .icon:hover {
   border-color: var(--activ_button-color);
   cursor: pointer;
   fill: var(--activ_button-color);
 }
-/* .icon:hover {
-  fill: var(--activ_button-color);
-  cursor: pointer;
-} */
 
 .character {
   display: flex;
@@ -468,10 +472,10 @@ footer {
   cursor: pointer;
 }
 
+
 /*---- Portfolio MAIN ------*/
 .portfolio-section {
   padding: 94px 0;
-  /* width: 1170px; */
 }
 .portfolio_section_ul {
   width: 1200px;
@@ -508,25 +512,64 @@ footer {
   text-decoration-color: var(--activ_button-color);
   text-decoration-thickness: 1px;
 }
-/* .check-mark {
-  color: #eeeeee;
-  background-color: var(--activ_button-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
 
 .projects {
-  /* margin: 0 15px 0 15px; */
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   width: 1170px;
 }
+
 .projects_li {
   flex-basis: calc((100 / 3));
   width: 370px;
   height: 404px;
   border: 2px solid var(--imag-border);
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+.projects_li > img {
+  /* position: relative;
+  overflow: hidden; */
+}
+.projects_li_img {
+  display: flex;
+  width: 370px;
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects_img {
+  width: 370px;
+  height: 294px;
+  display: flex;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+.projects_img_text {
+  display: flex;
+  width: 100%;
+  height: 294px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 49px 45px 49px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects_li:hover .projects_img_text {
+  transform: translatey(0);
 }
 .projects_li > figure {
   width: 370px;
@@ -536,6 +579,10 @@ footer {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.projects_li:hover .projects_img_blind {
+  transform: translateY(0);
+}
+
 .img_description {
   padding: 20px 0 0 24px;
 }

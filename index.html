@@ -49,12 +49,30 @@
       </div>
     </header>
     <main>
-      <section class="index_section1 containet section">
+      <section class="index_section1 section">
         <div class="container">
           <h1 class="h1_description">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="h1_button" type="button">Zamów usługe</button>
+          <button class="h1_button" type="button" data-modal-open>
+            Zamów usługe
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div>
+              <button type="button" data-modal-close>
+                <svg class="backdrop-close-button" width="30px" height="30px">
+                  <p>X</p>
+                   <!-- <use
+                    x="8"
+                    y="9"
+                    width="11px"
+                    height="11px"
+                    href="./images/icons.svg#close-button-icon"
+                  ></use> -->
+                </svg>
+              </button>
+            </div>
+          </div> -->
         </div>
       </section>
       <section class="section index_section2">
@@ -515,5 +533,21 @@
         </div>
       </div>
     </footer>
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div>
+        <button type="button" data-modal-close>
+          <svg class="backdrop-close-button" width="30px" height="30px">
+            <use
+              x="8"
+              y="9"
+              width="11px"
+              height="11px"
+              href="./images/icons.svg#close-button-icon"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div> -->
+    <script src="/js/modal.js"></script>
   </body>
 </html>
