@@ -205,35 +205,36 @@ header {
   top: 0;
   right: 0;
   bottom: 0;
-  transition: visibility 250ms var(--transition),
-    opacity 250ms var(--transition);
+
 }
 .modal-box {
   border-radius: 4px;
+  margin:auto;
   width: 528px;
   height: 581px;
-  position: fixed;
+  position: relative;
   display: flex;
   background-color: var(--third_font-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: visibility 250ms var(--transition),
-    opacity 250ms var(--transition);
-    z-index: 2;
+
+   transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  
+}
+.is-hidden .modal-box {
+  transform: scale(0);
 }
 .backdrop-close-button {
   width: 30px;
   height: 30px;
   position: absolute;
+  display: flex;
   right: 0;
   margin: 8px;
   border-radius: 50%;
@@ -277,7 +278,7 @@ header {
   line-height: 146%;
   color: var(--text-color);
 }
-.index_section3{
+.index_section3 {
   display: flex;
   z-index: 1;
 }
@@ -603,9 +604,9 @@ footer {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.projects_li:hover .projects_img_blind {
+/* .projects_li:hover .projects_img_blind {
   transform: translateY(0);
-}
+} */
 
 .img_description {
   padding: 20px 0 0 24px;
