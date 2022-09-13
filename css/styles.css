@@ -205,11 +205,13 @@ header {
   top: 0;
   right: 0;
   bottom: 0;
-
+  transition: visibility 2s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-box {
   border-radius: 4px;
-  margin:auto;
+  margin: auto;
   width: 528px;
   height: 581px;
   position: relative;
@@ -218,14 +220,13 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-   transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  
 }
 .is-hidden .modal-box {
   transform: scale(0);
