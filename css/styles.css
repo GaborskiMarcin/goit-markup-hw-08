@@ -268,7 +268,6 @@ header {
   color: #757575;
 }
 
-
 .modal_input {
   width: 448px;
   height: 40px;
@@ -278,14 +277,17 @@ header {
   border-radius: 4px;
   position: relative;
 }
-.textarea {
+.textar {
   height: 120px;
   padding: 12px 16px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: var(--text-color);
+  color: red;
+  /* background-color: chartreuse; */
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+/* color: rgba(117, 117, 117, 0.5); */
 }
 
 .modal_icon1 {
@@ -370,14 +372,6 @@ header {
   overflow: hidden;
 }
 
-/* .check {
-  display: block;
-  width: 16px;
-  height: 15px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-image: url(./)
-} */
 .modal_button {
   width: 200px;
   height: 50px;
@@ -406,7 +400,13 @@ header {
 .modal_input:focus-within {
   border: 1px solid var(--activ_button-color);
 }
-
+.form_label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(-text-color);
+}
 .form_label:hover,
 .form_label:focus-within {
   fill: var(--activ_button-color);
