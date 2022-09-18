@@ -221,8 +221,8 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
 }
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -235,14 +235,182 @@ header {
   width: 30px;
   height: 30px;
   position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
-  right: 0;
-  margin: 8px;
   border-radius: 50%;
   background-color: var(--third_font-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.modal_form {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.modal_form > p {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  justify-content: center;
+}
+.modal_form > label {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
 
+
+.modal_input {
+  width: 448px;
+  height: 40px;
+  display: flex;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  position: relative;
+}
+.textarea {
+  height: 120px;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.modal_icon1 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 107px;
+  left: 55px;
+}
+.modal_icon2 {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 174.26px;
+  left: 55px;
+}
+.modal_icon3 {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 243px;
+  left: 55px;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.checked-p {
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-left: 8px;
+}
+.checked-p::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  outline: 1px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check-links {
+  text-decoration: none;
+  color: var(--activ_button-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: text-decoration, color;
+  letter-spacing: 0.06em;
+}
+.check-links:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--activ_button-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-lex:checked + .checked-p::before {
+  background-color: var(--activ_button-color);
+  outline: 1px solid var(--activ_button-color);
+  border-radius: 2px;
+  background-image: url(../images/icon_check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 8px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* .check {
+  display: block;
+  width: 16px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(./)
+} */
+.modal_button {
+  width: 200px;
+  height: 50px;
+  top: 491px;
+  left: 164px;
+  position: absolute;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: #2196f3;
+}
+
+.modal_check_text {
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-flex;
+}
+.modal_check_text > a:hover {
+  color: var(--activ_button-color);
+  text-decoration: underline;
+}
+.modal_input:hover,
+.modal_input:focus-within {
+  border: 1px solid var(--activ_button-color);
+}
+
+.form_label:hover,
+.form_label:focus-within {
+  fill: var(--activ_button-color);
+}
 /* ----------/  MODAL --------- */
 .index_section2 {
   display: flex;
@@ -342,7 +510,6 @@ header {
   width: 270px;
   height: 428px;
   display: flex;
-
   background: var(--third_font-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -505,7 +672,91 @@ footer {
   background-color: var(--activ_button-color);
   cursor: pointer;
 }
+.newsletter {
+  display: flex;
+  width: 590px;
+  height: 86;
+  margin-left: 78px;
+  position: relative;
+}
 
+.news_form_title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third_font-color);
+  padding-bottom: 20px;
+}
+
+.news_input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  width: 358px;
+  height: 50px;
+  background-color: var(--background-foto);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+}
+.news_form > p {
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 100%;
+  align: Left;
+  vertical-align: Top;
+  letter-spacing: 3%;
+  color: #ffffff;
+  padding-right: 20pz;
+}
+.news_form > button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid var(--activ_button-color);
+  border-radius: 4px;
+  background-color: var(--activ_button-color);
+  color: var(--third_font-color);
+  margin-left: 12px;
+  padding-left: 42px;
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon_send {
+  margin-left: 24px;
+  fill: #fff;
+}
+/* .news_form > svg {
+  fill: #ffffff;
+ 
+} */
+
+.button_nl {
+  border: 1px solid var(--activ_button-color);
+  border-radius: 4px;
+  background-color: var(--activ_button-color);
+  width: 200px;
+  height: 50px;
+  color: var(--third_font-color);
+  /* position: relative; */
+}
+.botton_text {
+  /* display: flex; */
+  width: 82px;
+}
+.botton_text > svg {
+  /* position: absolute; */
+}
 /*---- Portfolio MAIN ------*/
 .portfolio-section {
   padding: 94px 0;
