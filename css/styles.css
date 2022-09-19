@@ -271,6 +271,7 @@ header {
 .modal_input {
   width: 448px;
   height: 40px;
+  padding-left: 35px;
   display: flex;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -280,14 +281,14 @@ header {
 .textar {
   height: 120px;
   padding: 12px 16px;
-  color: red;
+  color: #757575;
   /* background-color: chartreuse; */
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-/* color: rgba(117, 117, 117, 0.5); */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  /* color: rgba(117, 117, 117, 0.5); */
 }
 
 .modal_icon1 {
@@ -382,6 +383,12 @@ letter-spacing: 0.01em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: #2196f3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal_button:hover {
+  cursor: pointer;
+  background-color: #4c9fe4;
+  color:#ffffff
 }
 
 .modal_check_text {
@@ -397,15 +404,17 @@ letter-spacing: 0.01em;
   text-decoration: underline;
 }
 .modal_input:hover,
-.modal_input:focus-within {
+.modal_input:focus-within,
+.modal_input:checked {
   border: 1px solid var(--activ_button-color);
+  outline: none;
 }
 .form_label {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: var(-text-color);
+  color: var(--text-color);
 }
 .form_label:hover,
 .form_label:focus-within {
@@ -736,11 +745,12 @@ footer {
   margin-left: 24px;
   fill: #fff;
 }
-/* .news_form > svg {
-  fill: #ffffff;
- 
-} */
+.news_form > button:hover {
+  cursor: pointer;
+  background-color: #4c9fe4;
+}
 
+/* 
 .button_nl {
   border: 1px solid var(--activ_button-color);
   border-radius: 4px;
@@ -748,15 +758,13 @@ footer {
   width: 200px;
   height: 50px;
   color: var(--third_font-color);
-  /* position: relative; */
+  
 }
-.botton_text {
-  /* display: flex; */
+.button_text {
+  
   width: 82px;
-}
-.botton_text > svg {
-  /* position: absolute; */
-}
+} */
+
 /*---- Portfolio MAIN ------*/
 .portfolio-section {
   padding: 94px 0;

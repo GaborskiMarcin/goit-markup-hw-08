@@ -520,7 +520,7 @@
         <div class="newsletter">
           <form class="news_form" name="newsletter" autocomplete="on" novalidate>
             <p class="news_form_title">ZAPISZ SIĘ NA NEWSLETTER</p>
-            <input class="news_input" type="email" placeholder="E-mail" />
+            <input class="news_input" type="email" placeholder="E-mail" name="email"/>
             <button type="submit">Zapisz się
               <svg class="icon_send"
                 x="30px"
@@ -564,12 +564,9 @@
                    href="./images/icons.svg#icon-email" ></use>
               </svg>
           </label>  
-          <div >
-          <label class="form_label" for="text">Komentarz
-            <textarea class="textar modal_input" id="text" name="feedback"  rows="6" placeholder ="Wprowadź tekst" >
-          </textarea> 
-          </label>
-          </div>
+          
+          <label class="form_label" for="text">Komentarz</label>
+        <textarea class="textar modal_input" id="text" name="feedback" rows="2" placeholder="Wprowadź tekst"></textarea> 
             <div>
            <label class="checkbox">
 		          <input class="check-lex visually-hidden" type="checkbox" name="checkbox"/>
