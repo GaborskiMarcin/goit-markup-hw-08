@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <div class="header">
+      <div class="container header">
         <a class="logo" href="#WebStudio">Web<span class="logo--second-color">Studio</span></a>
         <nav class="header__menu">
           <ul class="menu">
@@ -173,7 +173,7 @@
           <h2 class="section4__h2">Nasz zespół</h2>
           <ul class="section4__cards">
             <li class="person-card">
-              <figure>
+              <figure class="person-card__item">
                 <img
                   src="images/img_01.jpg"
                   alt="mężczyzna w ciemnej koszuli w okularach z laptopoen wrękach"
@@ -228,7 +228,7 @@
                     </li>
                   </ul>
                 </figcaption>
-              </figure>
+              </figure class="person-card__item">
             </li>
             <li class="person-card">
               <figure>
@@ -349,10 +349,10 @@
                     </li>
                   </ul>
                 </figcaption>
-              </figure>
+              </figure class="person-card__item">
             </li>
             <li class="person-card">
-              <figure>
+              <figure class="person-card__item">
                 <img
                   src="images/img_04.jpg"
                   width="270"
@@ -455,20 +455,20 @@
     <footer>
       <div class="footer">
         <div class="adress">
-          <a class="logo_footer" href="#WebStudio">Web<span>Studio</span></a>
+          <a class="logo__footer" href="#WebStudio">Web<span class="logo__footer--color">Studio</span></a>
           <address class="address">
-            <p class="address_text">m.Warszawa, Aleje Jerozolimskie 21</p>
-            <a class="address_text" href="mailto:info@devstudio.com"
+            <p class="address__text">m.Warszawa, Aleje Jerozolimskie 21</p>
+            <a class="address__text--link" href="mailto:info@devstudio.com"
               >info@devstudio.com
             </a>
-            <a class="address_text" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="address__text--link" href="tel:+48111111111">+48 111 111 111</a>
           </address>
         </div>
 
         <div class="social-media">
-          <p class="social-media_text">DOŁĄCZ DO NAS</p>
-          <ul class="media_footer">
-            <li class="media__icon_footer">
+          <p class="social-media__text">DOŁĄCZ DO NAS</p>
+          <ul class="media media--footer">
+            <li class="media__icon media__icon--footer">
               <svg width="44" height="44" class="social_media">
                 <use
                   href="./images/icons.svg#icon-instagram-2"
@@ -479,7 +479,7 @@
                 ></use>
               </svg>
             </li>
-            <li class="media__icon_footer">
+            <li class="media__icon media__icon--footer">
               <svg width="44" height="44" class="social_media">
                 <use
                   href="./images/icons.svg#icon-twitter-1"
@@ -490,7 +490,7 @@
                 ></use>
               </svg>
             </li>
-            <li class="media__icon_footer">
+            <li class="media__icon media__icon--footer">
               <svg width="44" height="44" class="social_media">
                 <use
                   href="./images/icons.svg#icon-Vector3"
@@ -501,7 +501,7 @@
                 ></use>
               </svg>
             </li>
-            <li class="media__icon_footer">
+            <li class="media__icon media__icon--footer">
               <svg width="44" height="44" class="social_media">
                 <use
                   href="./images/icons.svg#icon-linkedin-1"
@@ -515,11 +515,11 @@
           </ul>
         </div>
         <div class="newsletter">
-          <form class="news_form" name="newsletter" autocomplete="on" novalidate>
-            <p class="news_form_title">ZAPISZ SIĘ NA NEWSLETTER</p>
-            <input class="news_input" type="email" placeholder="E-mail" name="email"/>
+          <form class="newsletter__form" name="newsletter" autocomplete="on" novalidate>
+            <p class="newsletter__title">ZAPISZ SIĘ NA NEWSLETTER</p>
+            <input class="newsletter__input" type="email" placeholder="E-mail" name="email"/>
             <button class="newsletter__button" type="submit">Zapisz się
-              <svg class="icon_send"
+              <svg class="newsletter__icon"
                 x="30px"
                 width="24px"
                 height="24px" >
