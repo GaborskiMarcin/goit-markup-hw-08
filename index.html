@@ -535,45 +535,49 @@
       </div>
     </footer>
      <div class="backdrop is-hidden" data-modal>
-      <div class="modal-box">
-        <form class="modal_form" name="data"><p>Zostaw swoje dane w formularzu poniżej</p>
-          <label class="form_label">Imię
-            <input class="modal_input" type="text" name="name"/>
-              <svg class="modal_icon1"> 
+      <div class="modal">
+        <form class="modal__form" name="data"><p>Zostaw swoje dane w formularzu poniżej</p>
+          <label class="modal__label">Imię
+            <input class="modal__input" type="text" name="name"/>
+              <svg class="modal__icon modal__icon--1"> 
                 <use width="12px"
                 height="12px"
                 href="./images/icons.svg#icon-name" ></use>
               </svg>
           </label>
-          <label class="form_label">Telefon
-            <input class="modal_input"  type="tel" name="phone_number"/>
-              <svg class="modal_icon2"> 
+          <label class="modal__label">Telefon
+            <input class="modal__input"  type="tel" name="phone_number"/>
+              <svg class="modal__icon modal__icon--2"> 
                <use width="13px"
                  height="13px"
                  href="./images/icons.svg#icon-phon" ></use>
               </svg>  
           </label>
-          <label class="form_label" for="mail">Email
-            <input  class="modal_input" type="email" name="email" id="mail" />
-              <svg class="modal_icon3"> 
+          <label class="modal__label" for="mail">Email
+            <input  class="modal__input" type="email" name="email" id="mail" />
+              <svg class="modal__icon modal__icon--3"> 
                 <use width="15px"
                    height="12px"
                    href="./images/icons.svg#icon-email" ></use>
               </svg>
           </label>  
           
-          <label class="form_label" for="text">Komentarz</label>
-        <textarea class="textar modal_input" id="text" name="feedback" rows="2" placeholder="Wprowadź tekst"></textarea> 
+          <label class="modal__label" for="text">Komentarz</label>
+        <textarea class="modal__input modal__input--textar" id="text" name="feedback" rows="2" placeholder="Wprowadź tekst"></textarea> 
             <div>
-           <label class="checkbox">
-		          <input class="check-lex visually-hidden" type="checkbox" name="checkbox"/>
-		          <P class ="checked-p">Oświadczam, iż akceptuję&nbsp<a href="#rules" class="check-links">Regulamin</a>&nbspi&nbsp<a href="#privacypolicy" class="check-links">Politykę Prywatności </a>.</P> 
+           <label class="modal__checkbox">
+		          <input class="modal__check visually-hidden" type="checkbox" name="checkbox"/>
+		          <P class ="modal__description">Oświadczam, iż akceptuję&nbsp
+                <a href="#rules" class="modal__description--links">Regulamin</a>
+                &nbspi&nbsp
+                <a href="#privacypolicy" class="modal__description--links">Politykę Prywatności </a>
+                .</P> 
           </label>
           </div>
 
-          <button class="modal_button" type="submit">Wyślij</button>  
+          <button class="modal__button" type="submit">Wyślij</button>  
         </form>
-        <button class="backdrop-close-button" type="button" data-modal-close>
+        <button class="backdrop__close-button" type="button" data-modal-close>
           <svg  width="30px"
               height="30px">
             <use

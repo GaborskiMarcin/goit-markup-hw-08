@@ -32,6 +32,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+footer {
+  width: 100%;
+  height: 252px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
 
 img {
   display: block;
@@ -214,7 +221,7 @@ header {
     opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-box {
+.modal {
   border-radius: 4px;
   margin: auto;
   width: 528px;
@@ -233,10 +240,10 @@ header {
   visibility: hidden;
   pointer-events: none;
 }
-.is-hidden .modal-box {
+.is-hidden .modal {
   transform: scale(0);
 }
-.backdrop-close-button {
+.backdrop__close-button {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -248,16 +255,16 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop-close-button:hover {
+.backdrop__close-button:hover {
   background-color: #757575;
   fill: #2196f3;
 }
-.modal_form {
+.modal__form {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
 }
-.modal_form > p {
+.modal__form > p {
   display: flex;
   font-style: normal;
   font-weight: 700;
@@ -268,7 +275,7 @@ header {
   color: #212121;
   justify-content: center;
 }
-.modal_form > label {
+.modal__form > label {
   margin-top: 10px;
   font-style: normal;
   font-weight: 400;
@@ -278,7 +285,7 @@ header {
   color: #757575;
 }
 
-.modal_input {
+.modal__input {
   width: 448px;
   height: 40px;
   padding-left: 35px;
@@ -288,7 +295,7 @@ header {
   border-radius: 4px;
   position: relative;
 }
-.textar {
+.modal__input--textar {
   height: 120px;
   padding: 12px 16px;
   color: #757575;
@@ -300,22 +307,24 @@ header {
   letter-spacing: 0.01em;
   /* color: rgba(117, 117, 117, 0.5); */
 }
-
-.modal_icon1 {
+.modal__icon {
+  position: absolute;
+}
+.modal__icon--1 {
   width: 12px;
   height: 12px;
   position: absolute;
   top: 107px;
   left: 55px;
 }
-.modal_icon2 {
+.modal__icon--2 {
   width: 13px;
   height: 13px;
   position: absolute;
   top: 174.26px;
   left: 55px;
 }
-.modal_icon3 {
+.modal__icon--3 {
   width: 15px;
   height: 12px;
   position: absolute;
@@ -323,13 +332,13 @@ header {
   left: 55px;
 }
 
-.checkbox {
+.modal__checkbox {
   display: inline-flex;
   align-items: center;
   margin-top: 20px;
   cursor: pointer;
 }
-.checked-p {
+.modal__description {
   display: flex;
   align-items: center;
   margin-top: 1px;
@@ -339,7 +348,7 @@ header {
   color: var(--text-color);
   margin-left: 8px;
 }
-.checked-p::before {
+.modal__description::before {
   display: inline-block;
   content: "";
   width: 16px;
@@ -349,21 +358,21 @@ header {
   margin-right: 8px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-links {
+.modal__description--links {
   text-decoration: none;
   color: var(--activ_button-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: text-decoration, color;
   letter-spacing: 0.06em;
 }
-.check-links:hover {
+.modal__description--links:hover {
   cursor: pointer;
   text-decoration: underline;
   color: var(--activ_button-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-lex:checked + .checked-p::before {
+.modal__check:checked + .modal__description::before {
   background-color: var(--activ_button-color);
   outline: 1px solid var(--activ_button-color);
   border-radius: 2px;
@@ -383,7 +392,7 @@ header {
   overflow: hidden;
 }
 
-.modal_button {
+.modal__button {
   width: 200px;
   height: 50px;
   top: 491px;
@@ -395,13 +404,13 @@ header {
   border-color: #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal_button:hover {
+.modal__button:hover {
   cursor: pointer;
   background-color: #4c9fe4;
   color: #ffffff;
 }
 
-.modal_check_text {
+.modal__check {
   padding-top: 20px;
   font-style: normal;
   font-weight: 400;
@@ -409,25 +418,22 @@ header {
   line-height: 24px;
   display: inline-flex;
 }
-.modal_check_text > a:hover {
-  color: var(--activ_button-color);
-  text-decoration: underline;
-}
-.modal_input:hover,
-.modal_input:focus-within,
-.modal_input:checked {
+
+.modal__input:hover,
+.modal__input:focus-within,
+.modal__input:checked {
   border: 1px solid var(--activ_button-color);
   outline: none;
 }
-.form_label {
+.modal__label {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: var(--text-color);
 }
-.form_label:hover,
-.form_label:focus-within {
+.modal__label:hover,
+.modal__label:focus-within {
   fill: var(--activ_button-color);
 }
 /* ----------/  MODAL --------- */
@@ -603,13 +609,7 @@ header {
   padding-bottom: 16px;
 }
 /*------ Index-FOOTER ------*/
-footer {
-  width: 100%;
-  height: 252px;
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-}
+
 .logo__footer {
   font-family: "Raleway";
   font-style: normal;
@@ -671,7 +671,6 @@ footer {
   margin-left: 0px;
 }
 .media__icon--footer {
-
   fill: var(--third_font-color);
   background-color: var(--background-icon);
 }
@@ -863,15 +862,15 @@ footer {
   transform: translateY(0);
 } */
 
-.img_description {
+.projects__label {
   padding: 20px 0 0 24px;
 }
-.img_description > h4 {
+.projects__title {
   padding-bottom: 4px;
   font-size: 18px;
   line-height: 171%;
 }
-.img_description > p {
+.project__description {
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
@@ -881,7 +880,7 @@ footer {
   border: 2px solid var(--activ_button-color);
 }
 
-.index_section5_li:hover {
+/* .index_section5_li:hover {
   fill: var(--activ_button-color);
   border-color: var(--activ_button-color);
-}
+} */
