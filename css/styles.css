@@ -43,12 +43,7 @@ footer {
 img {
   display: block;
 }
-.person-card__item {
-  display: flex;
-  flex-flow: column;
-  width: 270px;
-  height: 428px;
-}
+
 
 li {
   list-style: none;
@@ -539,6 +534,14 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.person-card__item {
+  display: flex;
+  flex-flow: column;
+  width: 270px;
+  height: 428px;
+}
+
+
 .icon {
   justify-content: space-between;
 }
@@ -712,7 +715,7 @@ header {
   padding-bottom: 20px;
   font-size: 14px;
   line-height: 100%;
-  align: Left;
+  align-items: Left;
   vertical-align: Top;
   letter-spacing: 3%;
   color: #ffffff;
