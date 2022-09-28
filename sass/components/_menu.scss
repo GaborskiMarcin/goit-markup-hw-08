@@ -1,0 +1,42 @@
+
+.menu {
+  min-width: 606px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 46px;
+
+
+&__item {
+  align-items: baseline;
+  justify-content: space-between;
+}
+&__item--current-page {
+  color: $activ_button-color;
+  position: relative;
+}
+&__item--current-page::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  border: 2px solid $activ_button-color;
+  background-color: $activ_button-color;
+}
+&__lebel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+}
+.menu__item:hover,
+.menu__item:active {
+  color: $activ_button-color;
+}

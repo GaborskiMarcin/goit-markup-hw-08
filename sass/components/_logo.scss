@@ -1,0 +1,17 @@
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $activ_button-color;
+  padding-left: 15px;
+  padding-right: 93px;
+  justify-content: center;
+  align-items: center;
+}
+.logo--second-color {
+  color: $second_font-color;
+  padding-left: 0px;
+}

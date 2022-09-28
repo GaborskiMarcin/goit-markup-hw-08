@@ -1,0 +1,22 @@
+.clients-logo {
+  display: inline-flex;
+  margin-left: 15px;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.clients-logo__element {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $icon_color;
+}
+
+.clients-logo__element:hover {
+  border-color: $activ_button-color;
+  cursor: pointer;
+  fill: $activ_button-color;
+}

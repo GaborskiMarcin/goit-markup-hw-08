@@ -1,0 +1,36 @@
+.logo__footer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $activ_button-color;
+  padding-left: 15px;
+  padding-right: 93px;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.logo__footer--color {
+  color: $third_font-color;
+}
+.address {
+  color: $third_font-color;
+  display: block;
+  padding: 20px 0 20px 15px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 146%;
+}
+
+.address__text:hover {
+  text-decoration: underline;
+  text-decoration-color: $activ_button-color;
+}
+
+.address__text--link {
+  display: block;
+  padding-top: 9px;
+  color: $adress-font;
+}

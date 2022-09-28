@@ -1,0 +1,40 @@
+
+.media {
+  margin-left: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  fill: $icon_color;
+
+&__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}}
+.media__icon:hover {
+  fill: $third_font-color;
+  background-color: $activ_button-color;
+  cursor: pointer;
+}
+.social-media {
+  margin-left: 70px;
+}
+.social-media__text {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $third_font-color;
+}
+.media--footer {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-left: 0px;
+}
+.media__icon--footer {
+  fill: $third_font-color;
+  background-color: $background-icon;
+}
