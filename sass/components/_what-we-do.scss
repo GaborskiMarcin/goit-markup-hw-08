@@ -1,40 +1,40 @@
-.what-we-do{
+.what-we-do {
   display: flex;
   z-index: 1;
 
-&__h2 {
-  display: flex;
-  flex-direction: column;
-  font-size: 36px;
-  padding: 0 0 50px 425px;
-}
+  &__h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    padding: 0 0 50px 425px;
+  }
 }
 .photo-list {
   display: flex;
   padding-bottom: 94px;
 
-&__element {
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-}
-&__text {
-  position: absolute;
-  top: 224px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 370px;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  &__element {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+  }
+  &__text {
+    position: absolute;
+    top: 224px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }

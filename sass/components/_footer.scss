@@ -1,19 +1,19 @@
 .address {
-  color: color('third_font');
+  color: color("third_font");
   display: block;
   padding: 20px 0 20px 15px;
   font-style: normal;
   font-size: 14px;
   line-height: 146%;
-}
 
-.address__text:hover {
-  text-decoration: underline;
-  text-decoration-color: color('activ_button');
-}
+  &__text:hover {
+    text-decoration: underline;
+    text-decoration-color: color("activ_button");
+  }
 
-.address__text--link {
-  display: block;
-  padding-top: 9px;
-  color: color('adress-font');
+  &__text--link {
+    display: block;
+    padding-top: 9px;
+    color: color("adress-font");
+  }
 }

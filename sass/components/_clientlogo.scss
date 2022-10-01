@@ -4,19 +4,20 @@
   flex-wrap: nowrap;
   gap: 30px;
 
-&__element {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: color('icon');
+  &__element {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: color("icon");
 
-&:hover {
-  border-color: color('activ_button');
-  cursor: pointer;
-  fill: color('activ_button');
+    &:hover {
+      border-color: color("activ_button");
+      cursor: pointer;
+      fill: color("activ_button");
+    }
+  }
 }
-}}
