@@ -3,8 +3,8 @@
   margin-left: 15px;
   flex-wrap: nowrap;
   gap: 30px;
-}
-.clients-logo__element {
+
+&__element {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -12,11 +12,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: $icon_color;
-}
+  fill: color('icon');
 
-.clients-logo__element:hover {
-  border-color: $activ_button-color;
+&:hover {
+  border-color: color('activ_button');
   cursor: pointer;
-  fill: $activ_button-color;
+  fill: color('activ_button');
 }
+}}

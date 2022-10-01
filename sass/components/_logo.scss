@@ -5,13 +5,17 @@
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: $activ_button-color;
+  color: color("activ_button");
   padding-left: 15px;
   padding-right: 93px;
   justify-content: center;
   align-items: center;
-}
-.logo--second-color {
-  color: $second_font-color;
-  padding-left: 0px;
+
+  &--second-color {
+    color: color("second_font");
+    
+  }
+  &--footer-color {
+    color: color("third_font");
+  }
 }

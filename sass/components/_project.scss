@@ -8,7 +8,7 @@
   flex-basis: calc((100 / 3));
   width: 370px;
   height: 404px;
-  border: 2px solid $imag-border;
+  border: 2px solid color('imag-border');
 }
 
 &__img {
@@ -55,7 +55,7 @@
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
-  color: $text-color;
+  color: color('text');
 }
 }
 .projects__item:hover .projects__text {
@@ -68,5 +68,5 @@
 }
 
 .projects__item > img:hover {
-  border: 2px solid $activ_button-color;
+  border: 2px solid color('activ_button');
 }

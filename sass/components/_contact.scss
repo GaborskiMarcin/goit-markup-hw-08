@@ -1,28 +1,32 @@
-.contact__item:hover,
-.contact__item:active {
-  text-decoration: underline;
-  text-decoration-color: $activ_button-color;
-}
-
 .contact {
   width: 321px;
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
+
   &__item {
     display: flex;
-     gap: 10px;
-     font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: $text-color;
-  cursor: pointer;
-  justify-content: space-between;}
+    gap: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: color("text");
+    cursor: pointer;
+    justify-content: space-between;
 
-&__item:hover {
-  fill: $activ_button-color;
-  color: $activ_button-color;
-}
+    &:hover {
+      fill: color("activ_button");
+      color: color("activ_button");
+      text-decoration: underline;
+      text-decoration-color: color("activ_button");
+    }
+    &:active {
+      fill: color("activ_button");
+      color: color("activ_button");
+      text-decoration: underline;
+      text-decoration-color: color("activ_button");
+    }
+  }
 }

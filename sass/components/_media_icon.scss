@@ -1,40 +1,40 @@
-
 .media {
   margin-left: 32px;
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
-  fill: $icon_color;
-
-&__icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-}}
-.media__icon:hover {
-  fill: $third_font-color;
-  background-color: $activ_button-color;
-  cursor: pointer;
+  fill: color("icon");
+  &--footer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-left: 0px;
+  }
+  &__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    &:hover {
+      fill: color("third_font");
+      background-color: color("activ_button");
+      cursor: pointer;
+    }
+    &--footer {
+      fill: color("third_font");
+      background-color: color("background-icon");
+    }
+  }
 }
 .social-media {
   margin-left: 70px;
-}
-.social-media__text {
-  padding-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $third_font-color;
-}
-.media--footer {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 10px;
-  margin-left: 0px;
-}
-.media__icon--footer {
-  fill: $third_font-color;
-  background-color: $background-icon;
+
+  &__text {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: color("third_font");
+  }
 }

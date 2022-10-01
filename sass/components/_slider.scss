@@ -1,7 +1,7 @@
 .slider {
   width: 100%;
   height: 600px;
-  background-color: $background-color;
+  background-color: color('background');
   display: flex;
   text-align: center;
   justify-content: center;
@@ -20,7 +20,7 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 116%;
-  color: $third_font-color;
+  color: color('third_font');
   letter-spacing: 0.06em;
   align-items: center;
   padding: 0 252px 30px;
@@ -29,8 +29,8 @@
   width: 200px;
   height: 50px;
   border-style: none;
-  color: $third_font-color;
-  background-color: $activ_button-color;
+  color: color('third_font');
+  background-color: color('activ_button');
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;

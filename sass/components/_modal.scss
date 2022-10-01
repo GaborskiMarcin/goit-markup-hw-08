@@ -8,6 +8,23 @@
   bottom: 0;
   transition: visibility 2s cubic-bezier(0.4, 0, 0.2, 1),
     opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__close-button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    border-radius: 50%;
+    background-color: color("third_font");
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: #757575;
+      fill: #2196f3;
+    }
+  }
 }
 
 .modal {
@@ -17,13 +34,30 @@
   height: 581px;
   position: relative;
   display: flex;
-  background-color: $third_font-color;
+  background-color: color("third_font");
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+  &__input {
+    width: 448px;
+    height: 40px;
+    padding-left: 35px;
+    display: flex;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    position: relative;
+  }
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -32,27 +66,7 @@
 .is-hidden .modal {
   transform: scale(0);
 }
-.backdrop__close-button {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  border-radius: 50%;
-  background-color: $third_font-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop__close-button:hover {
-  background-color: #757575;
-  fill: #2196f3;
-}
-.modal__form {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-}
+
 .modal__form > p {
   display: flex;
   font-style: normal;
@@ -74,16 +88,6 @@
   color: #757575;
 }
 
-.modal__input {
-  width: 448px;
-  height: 40px;
-  padding-left: 35px;
-  display: flex;
-  margin-top: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  position: relative;
-}
 .modal__input--textar {
   height: 120px;
   padding: 12px 16px;
@@ -94,26 +98,23 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  
 }
-.modal__icon {
-  position: absolute;
-}
-.modal__icon--1 {
+
+.modal__icon--person {
   width: 12px;
   height: 12px;
   position: absolute;
   top: 107px;
   left: 55px;
 }
-.modal__icon--2 {
+.modal__icon--phon {
   width: 13px;
   height: 13px;
   position: absolute;
   top: 174.26px;
   left: 55px;
 }
-.modal__icon--3 {
+.modal__icon--mail {
   width: 15px;
   height: 12px;
   position: absolute;
@@ -134,7 +135,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: $text-color;
+  color: color("text");
   margin-left: 8px;
 }
 .modal__description::before {
@@ -149,7 +150,7 @@
 }
 .modal__description--links {
   text-decoration: none;
-  color: $activ_button-color;
+  color: color("activ_button");
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: text-decoration, color;
   letter-spacing: 0.06em;
@@ -157,13 +158,13 @@
 .modal__description--links:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: $activ_button-color;
+  color: color("activ_button");
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__check:checked + .modal__description::before {
-  background-color: $activ_button-color;
-  outline: 1px solid $activ_button-color;
+  background-color: color("activ_button");
+  outline: 1px solid color("activ_button");
   border-radius: 2px;
   background-image: url(../images/icon_check.svg);
   background-repeat: no-repeat;
@@ -201,7 +202,7 @@
 .modal__input:hover,
 .modal__input:focus-within,
 .modal__input:checked {
-  border: 1px solid $activ_button-color;
+  border: 1px solid color("activ_button");
   outline: none;
 }
 .modal__label {
@@ -209,9 +210,9 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: $text-color;
+  color: color("text");
 }
 .modal__label:hover,
 .modal__label:focus-within {
-  fill: $activ_button-color;
+  fill: color("activ_button");
 }

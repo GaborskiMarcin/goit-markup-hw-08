@@ -15,8 +15,7 @@
   </head>
   <body>
     <header>
-      <section class="header">
-      <div class="header__container">
+       <div class="header header__container">
         <a class="logo" href="#WebStudio">Web<span class="logo--second-color">Studio</span></a>
         <nav class="header__menu">
           <ul class="menu">
@@ -46,7 +45,6 @@
           </li>
         </ul>
       </div>
-    </section>
     </header>
     <main>
        <section class="slider">
@@ -170,10 +168,10 @@
           </ul>
         </div>
       </section>
-      <section class="section section4">
-        <div class="container">
-          <h2 class="section4__h2">Nasz zespół</h2>
-          <ul class="section4__cards">
+      <section class="team">
+        <div class="team__container">
+          <h2 class="team__h2">Nasz zespół</h2>
+          <ul class="team__cards">
             <li class="person-card">
               <figure class="person-card__item">
                 <img
@@ -416,9 +414,9 @@
           </ul>
         </div>
       </section>
-      <section Class="section section5">
-        <div class="container">
-          <h2 class="section4__h2">Nasi klienci</h2>
+      <section class="customers">
+        <div class="customers__container">
+          <h2 class="team__h2">Nasi klienci</h2>
           <ul class="clients-logo">
             <li class="clients-logo__element">
               <svg class="clients-logo__icon" width="106" height="60" viewBox="0 0 56 32">
@@ -457,7 +455,7 @@
     <footer>
       <div class="footer">
         <div class="adress">
-          <a class="logo__footer" href="#WebStudio">Web<span class="logo__footer--color">Studio</span></a>
+          <a class="logo" href="#WebStudio">Web<span class="logo--footer-color">Studio</span></a>
           <address class="address">
             <p class="address__text">m.Warszawa, Aleje Jerozolimskie 21</p>
             <a class="address__text--link" href="mailto:info@devstudio.com"
@@ -541,7 +539,7 @@
         <form class="modal__form" name="data"><p>Zostaw swoje dane w formularzu poniżej</p>
           <label class="modal__label">Imię
             <input class="modal__input" type="text" name="name"/>
-              <svg class="modal__icon modal__icon--1"> 
+              <svg class=" modal__icon--person"> 
                 <use width="12px"
                 height="12px"
                 href="./images/icons.svg#icon-name" ></use>
@@ -549,7 +547,7 @@
           </label>
           <label class="modal__label">Telefon
             <input class="modal__input"  type="tel" name="phone_number"/>
-              <svg class="modal__icon modal__icon--2"> 
+              <svg class="modal__icon--phon"> 
                <use width="13px"
                  height="13px"
                  href="./images/icons.svg#icon-phon" ></use>
@@ -557,7 +555,7 @@
           </label>
           <label class="modal__label" for="mail">Email
             <input  class="modal__input" type="email" name="email" id="mail" />
-              <svg class="modal__icon modal__icon--3"> 
+              <svg class="modal__icon--mail"> 
                 <use width="15px"
                    height="12px"
                    href="./images/icons.svg#icon-email" ></use>

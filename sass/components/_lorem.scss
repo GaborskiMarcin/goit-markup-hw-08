@@ -15,8 +15,8 @@
 &__img {
   width: 270px;
   height: 120px;
-  border: 1px solid $button-color;
-  background-color: $button-color;
+  border: 1px solid color('button');
+  background-color: color('button');
   padding: 25px 100px;
 }
 &__icon {
@@ -31,5 +31,5 @@
 &__text {
   font-size: 14px;
   line-height: 146%;
-  color: $text-color;
+  color: color('text');
 }}

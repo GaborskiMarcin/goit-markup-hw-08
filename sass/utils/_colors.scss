@@ -1,0 +1,23 @@
+ 
+ $colors: (
+ "basic_font": #212121,
+ "second_font": black,
+ "third_font": #ffffff,
+ "text": #757575,
+ "link": blue,
+ "link_visited": rgb(115, 44, 197),
+ "activ_button": #2196f3,
+ "button": #f5f4fa,
+ "background": rgb(48, 49, 59),
+ "adress-font": rgba(255, 255, 255, 0.6),
+ "body-background": #f5f4fa,
+ "imag-border": #eeeeee,
+ "header-border": #ececec,
+ "background-foto": rgba(47, 48, 58, 0.4),
+  "background-icon": rgba(255, 255, 255, 0.1),
+  "icon": #afb1b8,
+  );
+
+  @function color($key) {
+  @return map-get($colors, $key);
+}
