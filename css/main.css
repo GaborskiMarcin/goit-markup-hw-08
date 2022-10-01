@@ -594,10 +594,13 @@ header {
   letter-spacing: 0.01em;
 }
 
-.modal__icon--person {
-  width: 12px;
-  height: 12px;
+.modal__icon--mail, .modal__icon--phon, .modal__icon--person {
   position: absolute;
+  height: 12px;
+  width: 12px;
+}
+
+.modal__icon--person {
   top: 107px;
   left: 55px;
 }
@@ -605,15 +608,12 @@ header {
 .modal__icon--phon {
   width: 13px;
   height: 13px;
-  position: absolute;
   top: 174.26px;
   left: 55px;
 }
 
 .modal__icon--mail {
   width: 15px;
-  height: 12px;
-  position: absolute;
   top: 243px;
   left: 55px;
 }
