@@ -47,12 +47,15 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.container {
+.container,
+.header__contaner,
+.footer__container,
+.portfolio__container,
+.slider__container,
+.lorem__container,
+.what-we-do__container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.section {
   padding: 94px 0;
 }
 
@@ -70,7 +73,7 @@ header {
   align-items: center;
 }
 
-.portfolio-section {
+.portfolio {
   padding: 94px 0;
 }
 
@@ -163,7 +166,7 @@ header {
   color: #2196f3;
 }
 
-.section1 {
+.slider {
   width: 100%;
   height: 600px;
   background-color: rgb(48, 49, 59);
@@ -177,7 +180,7 @@ header {
   background-position: center;
 }
 
-.section1__text {
+.slider__text {
   font-weight: 900;
   font-size: 44px;
   line-height: 116%;
@@ -207,46 +210,46 @@ header {
   background-color: #4c9fe4;
 }
 
-.section2 {
+.lorem {
   display: flex;
   min-width: 1200px;
 }
-.section2__list {
+.lorem__list {
   width: 1170px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.section2__item {
+.lorem__item {
   flex-basis: calc((100% - 90px) / 4);
 }
-.section2__img {
+.lorem__img {
   width: 270px;
   height: 120px;
   border: 1px solid #f5f4fa;
   background-color: #f5f4fa;
   padding: 25px 100px;
 }
-.section2__icon {
+.lorem__icon {
   display: flex;
   align-content: center;
   justify-content: center;
 }
-.section2__title {
+.lorem__title {
   padding-top: 30px;
   font-size: 16px;
 }
-.section2__text {
+.lorem__text {
   font-size: 14px;
   line-height: 146%;
   color: #757575;
 }
 
-.section3 {
+.what-we-do {
   display: flex;
   z-index: 1;
 }
-.section3__h2 {
+.what-we-do__h2 {
   display: flex;
   flex-direction: column;
   font-size: 36px;

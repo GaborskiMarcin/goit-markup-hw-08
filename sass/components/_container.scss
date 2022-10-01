@@ -1,10 +1,15 @@
-.container {
-  max-width: 1200px;
+.container, 
+.header__contaner, 
+.footer__container, 
+.portfolio__container, 
+.slider__container, 
+.lorem__container, 
+.what-we-do__container
+{max-width: 1200px;
   margin: 0 auto;
-}
-.section {
   padding: 94px 0;
 }
+
 .header {
   width: 1200px;
   display: flex;
@@ -17,6 +22,6 @@
   margin: auto 0 auto 0;
   align-items: center;
 }
-.portfolio-section {
+.portfolio {
   padding: 94px 0;
 }
