@@ -13,9 +13,25 @@
 
   &--second-color {
     color: color("second_font");
-    
   }
   &--footer-color {
     color: color("third_font");
+  }
+}
+.header {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &__container {
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

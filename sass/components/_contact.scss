@@ -1,9 +1,12 @@
 .contact {
   width: 321px;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 30px;
 
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
   &__item {
     display: flex;
     gap: 10px;

@@ -15,10 +15,12 @@
   </head>
   <body>
     <header>
-       <div class="header header__container">
+      <section class="header">
+       <div class=" header__container">
         <a class="logo" href="#WebStudio">Web<span class="logo--second-color">Studio</span></a>
         <nav class="header__menu">
-          <ul class="menu">
+          <div class="menu">
+          <ul class="menu__container">
             <li class="menu__item menu__item--current-page">
               <a class="menu__lebel" testhref="./index.html">Agencja </a>
             </li>
@@ -29,8 +31,10 @@
               <a class="menu__lebel" href="#kontakt">Kontakt</a>
             </li>
           </ul>
+          </div>
         </nav>
-        <ul class="contact">
+        <div class="contact">
+        <ul class="contact__container">
           <li class="contact__item">
             <svg class="contact__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
@@ -44,7 +48,9 @@
             <a href="tel:+48111111111"> +48 111 111 111</a>
           </li>
         </ul>
+        </div>
       </div>
+      </section>
     </header>
     <main>
        <section class="slider">
@@ -58,69 +64,69 @@
         </div>
 
       </section>
-      <section class="lorem">
-        <div class="lorem__container">
-          <ul class="lorem__list">
-            <li class="lorem__item">
-              <a class="lorem__card" href="#">
-                <svg class="lorem__img">
-                  <use class="lorem__icon"
+      <section class="benefits">
+        <div class="benefits__container">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <a class="benefits__card" href="#">
+                <svg class="benefits__img">
+                  <use class="benefits__icon"
                     href="./images/icons.svg#icon-antenna-1"
                     width="70"
                     height="70"
                   ></use>
                 </svg>
               </a>
-              <h3 class="lorem__title">LOREM IPSUM</h3>
-              <p class="lorem__text">
+              <h3 class="benefits__title">LOREM IPSUM</h3>
+              <p class="benefits__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__item">
-              <a class="lorem__card" href="#">
-                <svg class="lorem__img">
-                  <use class="lorem__icon"
+            <li class="benefits__item">
+              <a class="benefits__card" href="#">
+                <svg class="benefits__img">
+                  <use class="benefits__icon"
                     href="./images/icons.svg#icon-clock-1"
                     width="70"
                     height="70"
                   ></use>
                 </svg>
               </a>
-              <h3 class="lorem__title">LOREM IPSUM</h3>
-              <p class="lorem__text">
+              <h3 class="benefits__title">LOREM IPSUM</h3>
+              <p class="benefits__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__item">
-              <a class="lorem__card" href="#">
-                <svg class="lorem__img">
-                  <use class="lorem__icon"
+            <li class="benefits__item">
+              <a class="benefits__card" href="#">
+                <svg class="benefits__img">
+                  <use class="benefits__icon"
                     href="./images/icons.svg#icon-diagram-1"
                     width="70"
                     height="70"
                   ></use>
                 </svg>
               </a>
-              <h3 class="lorem__title">LOREM IPSUM</h3>
-              <p class="lorem__text">
+              <h3 class="benefits__title">LOREM IPSUM</h3>
+              <p class="benefits__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem__item">
-              <a class="lorem__card" href="#">
-                <svg class="lorem__img">
-                  <use class="lorem__icon"
+            <li class="benefits__item">
+              <a class="benefits__card" href="#">
+                <svg class="benefits__img">
+                  <use class="benefits__icon"
                     href="./images/icons.svg#icon-astronaut-11"
                     width="70"
                     height="70"
                   ></use>
                 </svg>
               </a>
-              <h3 class="lorem__title">LOREM IPSUM</h3>
-              <p class="lorem__text">
+              <h3 class="benefits__title">LOREM IPSUM</h3>
+              <p class="benefits__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -128,9 +134,9 @@
           </ul>
         </div>
       </section>
-      <section class="what-we-do">
-        <div class="what-we-do__container">
-          <h2 class="what-we-do__h2">Czym się zajmujemy</h2>
+      <section class="offer">
+        <div class="offer__container">
+          <h2 class="offer__h2">Czym się zajmujemy</h2>
           <ul class="photo-list">
             <li class="photo-list__element">
               <img class="photo-list__img"
@@ -453,8 +459,9 @@
       </section>
     </main>
     <footer>
-      <div class="footer">
-        <div class="adress">
+      <section class="footer">
+      <div class="footer__container">
+        <div class="address">
           <a class="logo" href="#WebStudio">Web<span class="logo--footer-color">Studio</span></a>
           <address class="address">
             <p class="address__text">m.Warszawa, Aleje Jerozolimskie 21</p>
@@ -467,8 +474,8 @@
 
         <div class="social-media">
           <p class="social-media__text">DOŁĄCZ DO NAS</p>
-          <ul class="media media--footer">
-            <li class="media__icon media__icon--footer">
+          <ul class="media--footer">
+            <li class="media__icon--footer">
               <svg width="44" height="44" class="social_media">
                 <use
                   href="./images/icons.svg#icon-instagram-2"
@@ -479,7 +486,7 @@
                 ></use>
               </svg>
             </li>
-            <li class="media__icon media__icon--footer">
+            <li class="media__icon--footer">
               <svg width="44" height="44" class="social_media">
                 <use
                   href="./images/icons.svg#icon-twitter-1"
@@ -490,7 +497,7 @@
                 ></use>
               </svg>
             </li>
-            <li class="media__icon media__icon--footer">
+            <li class="media__icon--footer">
               <svg width="44" height="44" class="social_media">
                 <use
                   href="./images/icons.svg#icon-Vector3"
@@ -501,7 +508,7 @@
                 ></use>
               </svg>
             </li>
-            <li class="media__icon media__icon--footer">
+            <li class="media__icon--footer">
               <svg width="44" height="44" class="social_media">
                 <use
                   href="./images/icons.svg#icon-linkedin-1"
@@ -514,7 +521,8 @@
             </li>
           </ul>
         </div>
-        <div class="newsletter">
+        <section class="newsletter">
+          <div class="newsletter__container">
           <form class="newsletter__form" name="newsletter" autocomplete="on" novalidate>
             <p class="newsletter__title">ZAPISZ SIĘ NA NEWSLETTER</p>
             <input class="newsletter__input" type="email" placeholder="E-mail" name="email"/>
@@ -531,12 +539,15 @@
               </svg>
             </button>
           </form>
-        </div>
+          </div>
+        </section>
       </div>
+    </section>
     </footer>
      <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="modal__form" name="data"><p>Zostaw swoje dane w formularzu poniżej</p>
+        <div class="modal__container">
+          <form class="modal__form" name="data"><p>Zostaw swoje dane w formularzu poniżej</p>
           <label class="modal__label">Imię
             <input class="modal__input" type="text" name="name"/>
               <svg class=" modal__icon--person"> 
@@ -576,8 +587,8 @@
           </div>
 
           <button class="modal__button" type="submit">Wyślij</button>  
-        </form>
-        <button class="backdrop__close-button" type="button" data-modal-close>
+          </form>
+          <button class="backdrop__close-button" type="button" data-modal-close>
           <svg  width="30px"
               height="30px">
             <use
@@ -588,7 +599,7 @@
               href="./images/icons.svg#icon-cross"
             ></use>
           </svg>
-        </button>
+          </button>
         </div>
       </div>
     </div>

@@ -19,12 +19,17 @@
       background-color: color("activ_button");
       cursor: pointer;
     }
-    &--footer {
-      fill: color("third_font");
-      background-color: color("background-icon");
-    }
+    
   }
 }
+.media__icon--footer{
+  @extend .media__icon; 
+  fill: color("third_font");
+      background-color: color("background-icon");
+}
+
+
+
 .social-media {
   margin-left: 70px;
 

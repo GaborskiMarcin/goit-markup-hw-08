@@ -1,29 +1,44 @@
-.container,
-.header__container,
-.footer__container,
-.portfolio__container,
-.slider__container,
-.lorem__container,
-.what-we-do__container,
-.team__container,
-.customers__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 94px 0;
-}
-
 .header {
-  width: 1200px;
-  display: flex;
+  width: 480px;
+    display: flex;
   align-items: center;
   padding: 24px 0 25px 0;
 }
-.footer {
-  width: 1200px;
-  display: flex;
-  margin: auto 0 auto 0;
-  align-items: center;
-}
-.portfolio {
-  padding: 94px 0;
-}
+
+
+
+@media screen and (min-width: 768px)
+{}
+
+@media screen and (min-width: 1200px)
+{}
+
+//.container,
+// .header__container,
+// .footer__container,
+// .portfolio__container,
+// .slider__container,
+// .lorem__container,
+// .what-we-do__container,
+// .team__container,
+// .customers__container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 94px 0;
+// }
+
+// .header {
+//   width: 1200px;
+//   display: flex;
+//   align-items: center;
+//   padding: 24px 0 25px 0;
+// }
+// .footer {
+//   width: 1200px;
+//   display: flex;
+//   margin: auto 0 auto 0;
+//   align-items: center;
+// }
+// .portfolio {
+//   padding: 94px 0;
+// }

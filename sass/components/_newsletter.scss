@@ -1,9 +1,11 @@
 .newsletter {
-  display: flex;
   width: 590px;
   height: 86;
   margin-left: 78px;
   position: relative;
+  &__container {
+    display: flex;
+  }
 
   &__title {
     font-weight: 700;

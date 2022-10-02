@@ -27,14 +27,6 @@ a {
   color: inherit;
 }
 
-footer {
-  width: 100%;
-  height: 252px;
-  background-color: rgb(48, 49, 59);
-  display: flex;
-  justify-content: center;
-}
-
 img {
   display: block;
 }
@@ -47,40 +39,49 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.container,
-.header__container,
-.footer__container,
-.portfolio__container,
-.slider__container,
-.lorem__container,
-.what-we-do__container,
-.team__container,
-.customers__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 94px 0;
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  padding-left: 15px;
+  padding-right: 93px;
+  justify-content: center;
+  align-items: center;
+}
+.logo--second-color {
+  color: black;
+}
+.logo--footer-color {
+  color: #ffffff;
 }
 
 .header {
-  width: 1200px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 24px 0 25px 0;
 }
-
-.footer {
+.header__container {
   width: 1200px;
+  height: 80px;
   display: flex;
-  margin: auto 0 auto 0;
+  justify-content: center;
   align-items: center;
-}
-
-.portfolio {
-  padding: 94px 0;
 }
 
 .contact {
   width: 321px;
+}
+.contact__container {
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
@@ -110,27 +111,10 @@ header {
   text-decoration-color: #2196f3;
 }
 
-.logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-  padding-left: 15px;
-  padding-right: 93px;
-  justify-content: center;
-  align-items: center;
-}
-.logo--second-color {
-  color: black;
-}
-.logo--footer-color {
-  color: #ffffff;
-}
-
 .menu {
+  width: 100%;
+}
+.menu__container {
   min-width: 606px;
   display: flex;
   justify-content: flex-start;
@@ -185,14 +169,24 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+.slider__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 94px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .slider__text {
+  width: 696px;
+  display: flex;
   font-weight: 900;
   font-size: 44px;
   line-height: 116%;
   color: #ffffff;
   letter-spacing: 0.06em;
   align-items: center;
-  padding: 0 252px 30px;
+  padding-bottom: 30px;
 }
 
 .button {
@@ -214,55 +208,65 @@ header {
   background-color: #4c9fe4;
 }
 
-.lorem {
-  display: flex;
+.benefits {
   min-width: 1200px;
 }
-.lorem__list {
+.benefits__container {
+  display: flex;
+  justify-content: center;
+  padding: 94px;
+}
+.benefits__list {
   width: 1170px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.lorem__item {
+.benefits__item {
   flex-basis: calc((100% - 90px) / 4);
 }
-.lorem__img {
+.benefits__img {
   width: 270px;
   height: 120px;
   border: 1px solid #f5f4fa;
   background-color: #f5f4fa;
   padding: 25px 100px;
 }
-.lorem__icon {
+.benefits__icon {
   display: flex;
   align-content: center;
   justify-content: center;
 }
-.lorem__title {
+.benefits__title {
   padding-top: 30px;
   font-size: 16px;
 }
-.lorem__text {
+.benefits__text {
   font-size: 14px;
   line-height: 146%;
   color: #757575;
 }
 
-.what-we-do {
+.offer {
   display: flex;
-  z-index: 1;
 }
-.what-we-do__h2 {
+.offer__container {
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+.offer__h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 36px;
-  padding: 0 0 50px 425px;
+  padding-bottom: 50px;
 }
 
 .photo-list {
   display: flex;
   padding-bottom: 94px;
+  justify-content: center;
 }
 .photo-list__element {
   position: relative;
@@ -293,11 +297,17 @@ header {
   display: flex;
   background-color: #f5f4fa;
 }
+.team__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 94px 0;
+}
 .team__h2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 36px;
-  padding: 0 0 50px 495px;
+  padding-bottom: 50px;
 }
 .team__cards {
   display: flex;
@@ -357,16 +367,17 @@ header {
   gap: 10px;
   margin-left: 0px;
 }
-.media__icon {
+.media__icon, .media__icon--footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
-.media__icon:hover {
+.media__icon:hover, .media__icon--footer:hover {
   fill: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
 }
+
 .media__icon--footer {
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -385,11 +396,21 @@ header {
   color: #ffffff;
 }
 
+.customers {
+  display: flex;
+}
+.customers__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 94px 0;
+}
+
 .clients-logo {
-  display: inline-flex;
+  display: flex;
   margin-left: 15px;
   flex-wrap: nowrap;
   gap: 30px;
+  justify-content: center;
 }
 .clients-logo__element {
   width: 170px;
@@ -425,12 +446,28 @@ header {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.newsletter {
+.footer {
+  width: 100%;
+  height: 252px;
+  background-color: rgb(48, 49, 59);
   display: flex;
+  justify-content: center;
+}
+.footer__container {
+  width: 1200px;
+  display: flex;
+  margin: auto 0 auto 0;
+  align-items: center;
+}
+
+.newsletter {
   width: 590px;
   height: 86;
   margin-left: 78px;
   position: relative;
+}
+.newsletter__container {
+  display: flex;
 }
 .newsletter__title {
   font-weight: 700;
@@ -525,10 +562,12 @@ header {
   width: 528px;
   height: 581px;
   position: relative;
-  display: flex;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__container {
+  display: flex;
   padding: 40px;
 }
 .modal__form {
@@ -712,12 +751,24 @@ header {
   fill: #2196f3;
 }
 
+.portfolio {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio__container {
+  margin: 0 auto;
+  display: flex;
+}
+
 .portfolio-menu {
   width: 1200px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
-  margin-left: 310px;
 }
 
 .portfolio-button {
@@ -743,10 +794,16 @@ header {
 }
 
 .projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects__container {
+  width: 1170px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  width: 1170px;
 }
 .projects__item {
   flex-basis: 33.3333333333;

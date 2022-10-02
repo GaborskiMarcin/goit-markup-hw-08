@@ -15,14 +15,24 @@
     url("../images/img_h1.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 94px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__text {
+    width: 696px;
+    display: flex;
     font-weight: 900;
     font-size: 44px;
     line-height: 116%;
     color: color("third_font");
     letter-spacing: 0.06em;
     align-items: center;
-    padding: 0 252px 30px;
+    padding-bottom: 30px;
   }
 }
 .button {

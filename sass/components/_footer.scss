@@ -17,3 +17,17 @@
     color: color("adress-font");
   }
 }
+
+.footer {
+  width: 100%;
+  height: 252px;
+  background-color: color("background");
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 1200px;
+    display: flex;
+    margin: auto 0 auto 0;
+    align-items: center;
+  }
+}
