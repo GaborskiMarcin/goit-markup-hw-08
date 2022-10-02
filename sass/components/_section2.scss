@@ -1,0 +1,35 @@
+.section2 {
+  display: flex;
+  min-width: 1200px;
+
+&__list {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+&__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+&__img {
+  width: 270px;
+  height: 120px;
+  border: 1px solid $button-color;
+  background-color: $button-color;
+  padding: 25px 100px;
+}
+&__icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+&__title {
+  padding-top: 30px;
+  font-size: 16px;
+}
+&__text {
+  font-size: 14px;
+  line-height: 146%;
+  color: $text-color;
+}}
