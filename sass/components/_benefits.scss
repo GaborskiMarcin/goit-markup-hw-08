@@ -43,6 +43,7 @@
 }
 @media screen and (min-width: 1200px) {
   .benefits {
+    width: 100%;
     min-width: 1200px;
     &__container {
       display: flex;

@@ -12,6 +12,15 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
 li {
   list-style: none;
 }
@@ -68,6 +77,23 @@ li {
   background-color: #4c9fe4;
 }
 
+@media screen and (min-width: 1200px) {
+  .slider__container {
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../../images/Img_h1__.jpg");
+  }
+  .slider__text {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    color: #ffffff;
+    letter-spacing: 0.06em;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+}
 .benefits {
   display: block;
   width: 480px;
@@ -114,6 +140,7 @@ li {
 
 @media screen and (min-width: 1200px) {
   .benefits {
+    width: 100%;
     min-width: 1200px;
   }
   .benefits__container {
@@ -152,8 +179,13 @@ li {
     color: #757575;
   }
 }
+.offer {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   .offer {
+    width: 100%;
     display: flex;
   }
   .offer__container {
@@ -197,4 +229,166 @@ li {
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
+}
+.team {
+  display: flex;
+  background-color: #f5f4fa;
+}
+.team__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 94px 0;
+}
+.team__h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+  padding-bottom: 50px;
+}
+.team__cards {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.person-card {
+  width: 270px;
+  height: 428px;
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.person-card__item {
+  display: flex;
+  flex-flow: column;
+  width: 270px;
+  height: 428px;
+}
+.person-card__name {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.person-card__position {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #757575;
+  padding-bottom: 16px;
+}
+
+.icon {
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    display: flex;
+    background-color: #f5f4fa;
+  }
+  .team__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 94px 0;
+  }
+  .team__h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
+  .team__cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .person-card {
+    width: 270px;
+    height: 428px;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .person-card__item {
+    display: flex;
+    flex-flow: column;
+    width: 270px;
+    height: 428px;
+  }
+  .person-card__name {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .person-card__position {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    padding-bottom: 16px;
+  }
+  .icon {
+    justify-content: space-between;
+  }
+}
+.media {
+  margin-left: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  fill: #afb1b8;
+}
+.media--footer {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-left: 0px;
+}
+.media__icon, .media__icon--footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.media__icon:hover, .media__icon--footer:hover {
+  fill: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.media__icon--footer {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-media {
+  margin-left: 70px;
+}
+.social-media__text {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
