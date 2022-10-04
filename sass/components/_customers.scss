@@ -1,8 +1,47 @@
 .customers {
-  width: 100%;
-  min-width: 480px;
+  border: 2px solid green;
+  width: 480px;
   &__container {
+    display: column;
     @include set-flex(column, center, center);
+    width: 100%;
+    margin: 0 auto;
+    padding: 94px 0;
+  }
+}
+.clients-logo {
+  max-width: 480px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: center;
+  flex-basis: calc(100% / 2);
+  &__element {
+    width: 210px;
+    height: 92px;
+    flex-basis: calc(100% / 2);
+    border: 4px solid #1037c2;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: color("icon");
+
+    &:hover {
+      border-color: color("activ_button");
+      cursor: pointer;
+      fill: color("activ_button");
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) {
+}
+.customers {
+  display: flex;
+  &__container {
     width: 100%;
     margin: 0 auto;
     padding: 94px 0;
@@ -12,8 +51,7 @@
 .clients-logo {
   display: flex;
   margin-left: 15px;
-  flex-wrap: rap;
-  flex-basis: calc((100 / 2));
+  flex-wrap: nowrap;
   gap: 30px;
   justify-content: center;
 
@@ -33,8 +71,4 @@
       fill: color("activ_button");
     }
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-}
-@media screen and (min-width: 1200px) {
 }
