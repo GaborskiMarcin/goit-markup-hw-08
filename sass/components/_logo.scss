@@ -7,7 +7,7 @@
   letter-spacing: 0.03em;
   color: color("activ_button");
   padding-left: 15px;
-  padding-right: 93px;
+  // padding-right: 93px;
   justify-content: center;
   align-items: center;
 
@@ -18,20 +18,35 @@
     color: color("third_font");
   }
 }
-.header {
-  width: 100%;
-  display: flex;
+.logo__footer {
+  @extend .logo;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  padding: 0;
   display: flex;
+}
+.header {
+  max-width: 480px;
+  // display: flex;
+  // text-align: center;
+  // justify-content: center;
+  // align-items: center;
+  // position: relative;
+  // display: flex;
   align-items: center;
   &__container {
-    width: 1200px;
-    height: 80px;
+    width: 100%;
+    height: 60px;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) { }
+
+
+
+
+
+  

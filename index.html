@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <section class="header">
        <div class=" header__container">
         <a class="logo" href="#WebStudio">Web<span class="logo--second-color">Studio</span></a>
@@ -50,8 +50,21 @@
         </ul>
         </div>
       </div>
+
+<button class="header__mobile js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg class="header__mobile-menu" width="24px" height="24px">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+        </button>
+      </div>
+
       </section>
-    </header> -->
+
+
+
+    </header>
     <main>
        <section class="slider">
         <div class="slider__container">
@@ -460,7 +473,7 @@
       <section class="footer">
       <div class="footer__container">
         <div class="address">
-          <a class="logo" href="#WebStudio">Web<span class="logo--footer-color">Studio</span></a>
+          <a class="logo__footer" href="#WebStudio">Web<span class="logo--footer-color">Studio</span></a>
           <address class="address">
             <p class="address__text">m.Warszawa, Aleje Jerozolimskie 21</p>
             <a class="address__text--link" href="mailto:info@devstudio.com"
@@ -542,9 +555,9 @@
       </div>
     </section>
     </footer>
-     <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="modal"> -->
-        <!-- <div class="modal__container">
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal"> 
+        <div class="modal__container">
           <form class="modal__form" name="data"><p>Zostaw swoje dane w formularzu poniżej</p>
           <label class="modal__label">Imię
             <input class="modal__input" type="text" name="name"/>
@@ -598,9 +611,9 @@
             ></use>
           </svg>
           </button>
-        </div> -->
+        </div>
       </div>
     </div>
-    <!-- <script src="./js/modal.js"></script> --> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

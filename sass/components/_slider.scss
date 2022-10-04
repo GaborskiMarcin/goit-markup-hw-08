@@ -1,13 +1,12 @@
 .slider {
-  width: 100%;
-  margin: 0 auto;
+  max-width: 480px;
+  margin: 0 0;
   @include set-flex(row, center, center);
-  background-color: color("background");
 
   &__container {
-    width: 480px;
+    width: 100%;
     height: 400px;
-
+    background-color: color("background");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
