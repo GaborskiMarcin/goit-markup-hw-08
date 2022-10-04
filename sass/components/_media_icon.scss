@@ -1,7 +1,7 @@
 .media {
-  margin-left: 32px;
+  
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
   gap: 10px;
   fill: color("icon");
   &--footer {
@@ -27,8 +27,6 @@
   fill: color("third_font");
       background-color: color("background-icon");
 }
-
-
 
 .social-media {
   margin-left: 70px;

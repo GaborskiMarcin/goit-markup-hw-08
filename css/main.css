@@ -19,6 +19,8 @@ a {
 
 img {
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -231,10 +233,12 @@ li {
   }
 }
 .team {
-  display: flex;
+  width: 480px;
   background-color: #f5f4fa;
+  border: 2px solid blue;
 }
 .team__container {
+  display: colun;
   width: 100%;
   margin: 0 auto;
   padding: 94px 0;
@@ -243,38 +247,46 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 36px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
   padding-bottom: 50px;
 }
 .team__cards {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  gap: 30px;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .person-card {
-  width: 270px;
-  height: 428px;
-  display: flex;
+  width: 450px;
+  height: 622px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .person-card__item {
   display: flex;
   flex-flow: column;
-  width: 270px;
-  height: 428px;
 }
 .person-card__name {
   display: flex;
+  justify-content: center;
   font-size: 16px;
   font-weight: 500;
-  justify-content: center;
+  letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
   padding-top: 30px;
   padding-bottom: 10px;
 }
@@ -286,6 +298,10 @@ li {
   color: #757575;
   padding-bottom: 16px;
 }
+.person-card__img {
+  width: 450px;
+  height: 460px;
+}
 
 .icon {
   justify-content: space-between;
@@ -294,9 +310,15 @@ li {
 @media screen and (min-width: 1200px) {
   .team {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 1170px;
     background-color: #f5f4fa;
   }
   .team__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
     padding: 94px 0;
@@ -306,7 +328,7 @@ li {
     flex-direction: column;
     align-items: center;
     font-size: 36px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
   .team__cards {
     display: flex;
@@ -347,14 +369,17 @@ li {
     color: #757575;
     padding-bottom: 16px;
   }
+  .person-card__img {
+    width: 270px;
+    height: 260px;
+  }
   .icon {
     justify-content: space-between;
   }
 }
 .media {
-  margin-left: 32px;
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
   gap: 10px;
   fill: #afb1b8;
 }
@@ -391,4 +416,42 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.customers {
+  width: 100%;
+  min-width: 480px;
+}
+.customers__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 94px 0;
+}
+
+.clients-logo {
+  display: flex;
+  margin-left: 15px;
+  flex-wrap: rap;
+  flex-basis: 50;
+  gap: 30px;
+  justify-content: center;
+}
+.clients-logo__element {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+.clients-logo__element:hover {
+  border-color: #2196f3;
+  cursor: pointer;
+  fill: #2196f3;
 }/*# sourceMappingURL=main.css.map */
