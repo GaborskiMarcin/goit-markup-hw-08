@@ -29,7 +29,7 @@
 }
 
 .social-media {
-  margin-left: 70px;
+  margin-left: 0px;
 
   &__text {
     padding-bottom: 20px;
@@ -39,5 +39,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: color("third_font");
+    text-align: center;
   }
 }

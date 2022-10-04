@@ -16,11 +16,11 @@
   flex-wrap: wrap;
   gap: 3px;
   justify-content: center;
-  flex-basis: calc(100% / 2);
+  flex-basis: auto;
   &__element {
     width: 210px;
     height: 92px;
-    flex-basis: calc(100% / 2);
+    flex-basis: auto;
     border: 4px solid #1037c2;
     border-radius: 15px;
     display: flex;
@@ -38,7 +38,6 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 }
 @media screen and (min-width: 1200px) {
-}
 .customers {
   display: flex;
   &__container {
@@ -71,4 +70,5 @@
       fill: color("activ_button");
     }
   }
+}
 }
