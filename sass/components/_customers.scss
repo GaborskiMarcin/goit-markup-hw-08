@@ -2,6 +2,7 @@
   border: 2px solid green;
   width: 480px;
   &__container {
+    min-width:320px;
     display: column;
     @include set-flex(column, center, center);
     width: 100%;
@@ -21,8 +22,8 @@
     width: 210px;
     height: 92px;
     flex-basis: auto;
-    border: 4px solid #1037c2;
-    border-radius: 15px;
+    border: 4px solid #dadbdf;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;

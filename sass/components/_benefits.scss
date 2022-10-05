@@ -3,6 +3,7 @@
   width: 480px;
   border: 2px solid red;
   &__container {
+    min-width:320px; 
     @include set-flex(column, center, center);
     padding: 60px 15px;
   }
