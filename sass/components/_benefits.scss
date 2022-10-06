@@ -1,9 +1,10 @@
 .benefits {
   display: block;
-  width: 480px;
+  min-width: 320px;
+  width: 100%;
   border: 2px solid red;
   &__container {
-    min-width:320px; 
+    width: 100%;
     @include set-flex(column, center, center);
     padding: 60px 15px;
   }
@@ -40,47 +41,69 @@
     padding-bottom: 30px;
   }
 }
+.offer {
+  display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__container {
+      width: 786px;
+      border: 2px solid green;
+      
+    }
+    &__list {
+      display: flex;
+      width: 100%;
+      gap: 30px;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    &__img {
+      width: 354px;
+      padding: 25px 144px 0;
+    }
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+      display: block;
+      width: 100%;
+    }
+    &__text {
+      width: 354px;
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   .benefits {
     width: 100%;
-    min-width: 1200px;
+    display: flex;
+    justify-content: center;
     &__container {
-      display: flex;
-      justify-content: center;
+      width: 1200px;
+      border: 2px solid green;
       padding: 94px;
     }
     &__list {
-      width: 1170px;
       display: flex;
-      flex-wrap: wrap;
+      width: 100%;
       gap: 30px;
+      flex-wrap: nowrap;
+      justify-content: center;
+      flex-direction: row;
     }
-    &__item {
-      flex-basis: calc((100% - 90px) / 4);
-    }
-
     &__img {
       width: 270px;
-      height: 120px;
-      border: 1px solid color("button");
-      background-color: color("button");
-      padding: 25px 100px;
+      padding: 25px 102px 0;
     }
-    &__icon {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-    }
-    &__title {
-      padding-top: 30px;
-      font-size: 16px;
+    &__item {
+      // flex-basis: calc((100% - 30px) / 2);
+      // display: block;
+      width: 100%;
     }
     &__text {
-      font-size: 14px;
-      line-height: 146%;
-      color: color("text");
+      width: 270px;
     }
   }
 }

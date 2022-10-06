@@ -1,5 +1,7 @@
 .team {
-  width: 480px;
+ display: block;
+  min-width: 320px;
+  width: 100%;
   background-color: color("body-background");
   border: 2px solid blue;
   &__container {

@@ -21,3 +21,20 @@
   @function color($key) {
   @return map-get($colors, $key);
 }
+
+*{
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body{
+    font-family: 'Roboto', 'Raleway', 'Montserrat', sans-serif;
+    color: var(--text-color-main);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
