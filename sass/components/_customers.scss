@@ -1,6 +1,8 @@
 .customers {
   border: 2px solid green;
-  width: 480px;
+  display: block;
+  min-width: 320px;
+  width: 100%;
   &__container {
     min-width:320px;
     display: column;
