@@ -1,6 +1,9 @@
-@mixin font-styles($size, $weight, $spacing) {
-  font-size: $size;
+@mixin font-styles($family, $style, $weight, $size, $lheight, $spacing) {
+  font-family:$family;
+  font-style:$style;
   font-weight: $weight;
+  font-size: $size;
+  line-height:$lheight;
   letter-spacing: $spacing;
 }
 @mixin set-flex($flex-direction, $justify-content, $align-items) {
@@ -11,6 +14,6 @@
 }
 
 // @include set-flex(row, center, center);
-// @include font-styles(16px, 500, 0.03em);
+// @include font-styles('Raleway', normal, 700, 24px, 28px, 0.03em);
 // .nowy{
 //@extend .kopiowany; nowe włąściwości } 

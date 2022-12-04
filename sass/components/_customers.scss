@@ -1,36 +1,43 @@
 .customers {
-  border: 2px solid green;
-  display: block;
+  display: flex;
   min-width: 320px;
   width: 100%;
+  justify-content: center;
   &__container {
-    min-width:320px;
-    display: column;
-    @include set-flex(column, center, center);
-    width: 100%;
-    margin: 0 auto;
-    padding: 94px 0;
+    position: relative;
+    max-width: 480px;
+    // display: column;
+    // @include set-flex(column, center, center);
+    // width: 100%;
+    margin: 0;
+    padding-top: 60px;
+  }
+  &__h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
   }
 }
 .clients-logo {
-  max-width: 480px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3px;
-  justify-content: center;
-  flex-basis: auto;
+  gap: 10px;
+  justify-content: space-around;
+  // flex-basis: calc((100% - 30px) / 2);
+
   &__element {
     width: 210px;
     height: 92px;
-    flex-basis: auto;
-    border: 4px solid #dadbdf;
+    flex-basis: calc((100% - 30px) / 2);
+    border: 1px solid #dadbdf;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     fill: color("icon");
-
+    // margin: 10px;
     &:hover {
       border-color: color("activ_button");
       cursor: pointer;
@@ -39,39 +46,43 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-logo__element {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 @media screen and (min-width: 1200px) {
-.customers {
-  display: flex;
-  &__container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 94px 0;
-  }
-}
-
-.clients-logo {
-  display: flex;
-  margin-left: 15px;
-  flex-wrap: nowrap;
-  gap: 30px;
-  justify-content: center;
-
-  &__element {
-    width: 170px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
+  .customers {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: color("icon");
+    &__container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 94px 0;
+    }
+  &__h2{padding-bottom: 50px;}
+  }
 
-    &:hover {
-      border-color: color("activ_button");
-      cursor: pointer;
-      fill: color("activ_button");
+  .clients-logo {
+    display: flex;
+    margin-left: 15px;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+
+    &__element {
+      width: 170px;
+      height: 92px;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      fill: color("icon");
+
+      &:hover {
+        border-color: color("activ_button");
+        cursor: pointer;
+        fill: color("activ_button");
+      }
     }
   }
-}
 }

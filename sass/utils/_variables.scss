@@ -1,40 +1,55 @@
- 
- $colors: (
- "basic_font": #212121,
- "second_font": black,
- "third_font": #ffffff,
- "text": #757575,
- "link": blue,
- "link_visited": rgb(115, 44, 197),
- "activ_button": #2196f3,
- "button": #f5f4fa,
- "background": rgb(48, 49, 59),
- "adress-font": rgba(255, 255, 255, 0.6),
- "body-background": #f5f4fa,
- "imag-border": #eeeeee,
- "header-border": #ececec,
- "background-foto": rgba(47, 48, 58, 0.4),
+$colors: (
+  "basic_font": #212121,
+  "second_font": black,
+  "third_font": #ffffff,
+  "text": #757575,
+  "link": blue,
+  "link_visited": rgb(115, 44, 197),
+  "activ_button": #2196f3,
+  "button": #f5f4fa,
+  "background": rgba(47, 48, 58,1),
+  "adress-font": rgba(255, 255, 255, 0.6),
+  "body-background": #f5f4fa,
+  "imag-border": #eeeeee,
+  "header-border": #ececec,
+  "background-foto": rgba(47, 48, 58, 0.4),
   "background-icon": rgba(255, 255, 255, 0.1),
   "icon": #afb1b8,
-  );
+);
 
-  @function color($key) {
+@function color($key) {
   @return map-get($colors, $key);
 }
 
-*{
-    box-sizing: border-box;
-    margin-left: 0;
-    margin-right: 0;
+* {
+  box-sizing: border-box;
+  margin:0; 
+  list-style: none;
 }
 
-body{
-    font-family: 'Roboto', 'Raleway', 'Montserrat', sans-serif;
-    color: var(--text-color-main);
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-family: "Roboto", "Raleway", "Montserrat", sans-serif;
 }
 
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+
 }

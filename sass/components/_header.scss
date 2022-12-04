@@ -1,78 +1,85 @@
 .header {
   min-width: 320px;
-  display: block;
+  height: 60px;
 
+  display: flex;
+  justify-content: center;
   &__container {
     width: 100%;
-    height: 60px;
-    border: 2px solid red;
-    padding: 15px;
+    min-width: 320px;
+
+    margin: 0 auto;
+    display: flex;
   }
-}
-.logo {
-  margin-left: 15px;
-  font-family: "Raleway";
-  font-style: normal;
-  color: color("activ_button");
-  @include font-styles(24px, 700, 0.03em);
-  &--second-color {
-    color: color("second_font");
-  }
-  &__footer {
-    font-family: "Raleway";
-    font-style: normal;
-    color: color("activ_button");
-    @include font-styles(24px, 700, 0.03em);
-    padding: 0;
-  }
-  &--footer-color {
-    color: color("third_font");
-  }
-}
-.header__mobile {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background-color: white;
-  border: none;
-  &__mobile-menu {
+  &__mobile {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    top: 10px;
+    &:hover {
+      fill: color("activ_button");
+    }
   }
 }
 
-.header__menu {
-  display: none;
-}
 .contact {
   display: none;
 }
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+.menu {
+  display: none;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .header {
-    min-width: 768px;
+    min-width: 480px;
     display: flex;
-
+    align-items: center;
     &__container {
-      width: 100%;
-      height: 80px;
+      width: 480px;
       display: flex;
+      padding-left: 15px;
       align-items: center;
-      border: 2px solid rgba(45, 151, 23, 0.658);
+    }
+    &__mobile {
+      position: static;
+      margin-left: 276px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    &__mobile {
+      display: none;
+    }
+    &__container {
+      width: 768px;
+      height: 80px;
+
+      align-items: center;
     }
   }
   .header__menu {
     @include set-flex(row, center, center);
-    padding-left: 88px;
-    width: 100%;
+    @include font-styles("Roboto", normal, 500, 14px, 16px, 0.02em);
+    color: color("basic_font");
+    margin-left: 83px;
+    gap: 60px;
+    width: 282px;
     justify-content: space-between;
   }
   .menu {
     display: flex;
+    height: 80px;
+    align-items: center;
+
     &__container {
       // min-width: 606px;
       display: flex;
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-      gap: 46px;
+      align-items: center;
     }
     &__item {
       align-items: baseline;
@@ -103,24 +110,18 @@
   }
   .contact {
     display: flex;
-    margin-left: 96px;
-    margin-right: 15px;
+    padding-left: 101px;
 
     &__container {
       width: 100%;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      gap: 10px;
-      padding-right: 15px;
+      // gap: 10px;
+      // padding-right: 15px;
     }
     &__item {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.02em;
+      @include font-styles("Roboto", normal, 500, 12px, 14px, 0.02em);
       color: color("text");
       cursor: pointer;
       justify-content: space-between;
@@ -128,116 +129,37 @@
       &:hover {
         fill: color("activ_button");
         color: color("activ_button");
-        text-decoration: underline;
+
         text-decoration-color: color("activ_button");
       }
       &:active {
         fill: color("activ_button");
         color: color("activ_button");
-        text-decoration: underline;
         text-decoration-color: color("activ_button");
       }
     }
-  }
-  .header__mobile {
-    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     &__container {
-      border: 2px solid rgba(131, 19, 206, 0.658);
       width: 1200px;
-      height: 80px;
-      display: flex;
-      align-items: center;
     }
-  }
-  .header__menu {
-    @include set-flex(row, center, center);
-    padding-left: 88px;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .menu {
-    display: flex;
-    &__container {
-      // min-width: 606px;
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: nowrap;
-      gap: 46px;
-    }
-    &__item {
-      align-items: baseline;
-      justify-content: space-between;
-      &:hover {
-        color: color("activ_button");
-      }
-      &:active {
-        color: color("activ_button");
-      }
-    }
-    &__item--current-page {
-      color: color("activ_button");
-      position: relative;
-    }
-    &__item--current-page::after {
-      content: " ";
-      display: block;
-      position: absolute;
-      bottom: -34px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      border: 2px solid color("activ_button");
-      background-color: color("activ_button");
+    &__menu {
+      margin-left: 93px;
     }
   }
   .contact {
-    display: flex;
-    margin-left: 96px;
-    margin-right: 15px;
-
+    padding-left: 330px;
     &__container {
-      width: 100%;
-      display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-      gap: 10px;
-      padding-right: 15px;
-      align-items: center
+      gap: 30px;
     }
     &__item {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.02em;
-      color: color("text");
-      cursor: pointer;
-      justify-content: space-between;
-
-      &:hover {
-        fill: color("activ_button");
-        color: color("activ_button");
-        text-decoration: underline;
-        text-decoration-color: color("activ_button");
-      }
-      &:active {
-        fill: color("activ_button");
-        color: color("activ_button");
-        text-decoration: underline;
-        text-decoration-color: color("activ_button");
-      }
+      @include font-styles("Roboto", normal, 500, 14px, 16px, 0.02em);
     }
   }
-  .header__mobile {
-    display: none;
-  }
 }
+// @media screen and (min-width: 768px) and (max-width: 1199px){
+
+// }

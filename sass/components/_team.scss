@@ -1,29 +1,26 @@
 .team {
- display: block;
+  display: flex;
   min-width: 320px;
   width: 100%;
   background-color: color("body-background");
-  border: 2px solid blue;
+  
   &__container {
-    display: column;
-    width: 100%;
-    margin: 0 auto;
+    
+    width: 480px;
     padding: 94px 0;
   }
   &__h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include font-styles(28px, 700, 0.03em);
-    font-family: "Roboto";
-    font-style: normal;
+    @include font-styles("Roboto", normal, 700, 28px, 33px, 0.03em);
     padding-bottom: 50px;
   }
   &__cards {
     @include set-flex(column, center, center);
 
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
   }
 }
 .person-card {
@@ -48,7 +45,7 @@
   &__name {
     display: flex;
     justify-content: center;
-    @include font-styles(16px, 500, 0.03em);
+    @include font-styles("Roboto", normal, 500, 16px, 19px, 0.03em);
     font-family: "Roboto";
     font-style: normal;
     padding-top: 30px;
@@ -57,7 +54,7 @@
   &__position {
     display: flex;
     justify-content: center;
-    font-size: 16px;
+    @include font-styles("Roboto", normal, 400, 16px, 19px, 0.03em);
     font-weight: 400;
     color: color("text");
     padding-bottom: 16px;
@@ -71,7 +68,47 @@
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    position: relative;
+    &__h2 {
+      width: 314px;
+
+      position: absolute;
+      top: 30px;
+      padding-bottom: 20px;
+    }
+    &__container {
+     
+      width: 100%;
+      // padding: 94px 0;
+      display: flex;
+      justify-content: center;
+    }
+    &__cards {
+      width: 768px;
+      display: flex;
+      gap: 30px;
+      flex-basis: (calc(100% - 80px) / 2);
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .person-card {
+    // border: 4px solid yellowgreen;
+    width: 354px;
+    height: 536px;
+
+    flex-basis: calc((100% - 30px) / 2);
+    &__img {
+      width: 354px;
+      height: 374px;
+    }
+  }
 }
+
 @media screen and (min-width: 1200px) {
   .team {
     display: flex;

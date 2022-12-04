@@ -1,9 +1,14 @@
-.offer {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
+// @media screen and (min-width: 120px) and (max-width: 1199px) {
   .offer {
-    width: 100%;
+    display: none;
+  }
+  .photo-list {
+    display: none;
+  }
+// }
+@media screen and (min-width: 1199px) {
+  .offer {
+    // width: 1200px;
     // z-index: 1;
     display: flex;
     &__container {

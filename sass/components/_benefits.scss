@@ -1,39 +1,40 @@
 .benefits {
-  display: block;
+  display: flex;
+  justify-content: center;
   min-width: 320px;
-  border: 2px solid red;
+ 
   &__container {
+   
+    max-width: 480px;
     width: 100%;
     @include set-flex(column, center, center);
-    padding-top:60px;
+    padding-top: 60px;
   }
   &__list {
-    width:450px; 
     display: flex;
+    width: 450px;
     flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap; 
-    // flex-direction: column;
-    // flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;
   }
   &__item {
-    // display: flex;
-    // flex-basis: 100%;
+    display:flex;
+    align-items: center;
+     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__img {
-    max-width: 450px;
-    height: 120px;
-    border: 1px solid color("button");
-    background-color: color("button");
-    padding: 25px 192px 0;
-  }
-  &__icon {
     display: flex;
-    align-content: center;
-    justify-content: center;
+    width: 450px;
+    height: 120px;
+    background-color: color("button");
+    align-items: center;
+    justify-content: center; 
+ 
   }
+ 
   &__title {
     padding: 30px 105px 10px 105px;
     font-size: 16px;
@@ -57,9 +58,8 @@
     display: flex;
     justify-content: center;
     &__container {
-      width: 786px;
-      border: 2px solid green;
-      
+      max-width: 1199px;
+     
     }
     &__list {
       display: flex;
@@ -74,7 +74,7 @@
     }
     &__item {
       flex-basis: calc((100% - 30px) / 2);
-      display: block;
+      
       width: 100%;
     }
     &__text {
@@ -89,7 +89,7 @@
     justify-content: center;
     &__container {
       width: 1200px;
-      border: 2px solid green;
+   
       padding: 94px;
     }
     &__list {
@@ -105,8 +105,7 @@
       padding: 25px 102px 0;
     }
     &__item {
-      // flex-basis: calc((100% - 30px) / 2);
-      // display: block;
+
       width: 100%;
     }
     &__text {

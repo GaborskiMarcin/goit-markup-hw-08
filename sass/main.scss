@@ -1,11 +1,11 @@
 // @import "./utils/visually-hidden";
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./components/common";
+@import "./utils/container";
+// @import "./components/common";
 
 @import "./components/header";
-// @import "./components/contact";
-// @import "./components/menu";
+@import "./components/logo";
 @import "./components/slider";
 @import "./components/benefits";
 @import "./components/offer";
@@ -13,23 +13,12 @@
 @import "./components/media_icon";
 @import "./components/customers";
 @import "./components/footer";
-// // @import "./components/newsletter";
 @import "./components/modal";
-
+@import "./components/mobile-js-menu";
 @import "./components/portfolio";
 @import "./components/portfolio_button";
 @import "./components/project";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// @import "./components/contact";
+// @import "./components/menu";
+// // @import "./components/newsletter";
