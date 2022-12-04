@@ -276,7 +276,7 @@ a {
   background-repeat: no-repeat;
   background-size: 480px 400px;
   background-position: center;
-  background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("./images/mobile/Slider_mo.jpg");
+  background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../images/mobile/Slider_mo.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -317,30 +317,30 @@ a {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .slider__container {
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(./images/mobile/Slider_mox2.jpg);
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(../images/mobile/Slider_mox2.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .slider__container {
     background-size: 768px 400px;
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("./images/tab/Slider_tab.jpg");
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../images/tab/Slider_tab.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .slider__container {
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(./images/tab/Slider_tabx2.jpg);
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(../images/tab/Slider_tabx2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .slider__container {
     height: 600px;
     background-size: 1600px 600px;
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("./images/desktop/Slider_desk.jpg");
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../images/desktop/Slider_desk.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .slider__container {
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(./images/desktop/Slider_deskx2.jpg);
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(../images/desktop/Slider_deskx2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {

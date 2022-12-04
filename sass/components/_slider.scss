@@ -13,7 +13,7 @@
         rgba(48, 49, 59, 0.4) 0%,
         rgba(48, 49, 59, 0.4) 100%
       ),
-      url("./images/mobile/Slider_mo.jpg");
+      url("../images/mobile/Slider_mo.jpg");
     // position: relative;
     @include set-flex(column, center, center);
     text-align: center;
@@ -51,7 +51,7 @@
         rgba(48, 49, 59, 0.4) 0%,
         rgba(48, 49, 59, 0.4) 100%
       ),
-      url(./images/mobile/Slider_mox2.jpg);
+      url(../images/mobile/Slider_mox2.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -62,7 +62,7 @@
         rgba(48, 49, 59, 0.4) 0%,
         rgba(48, 49, 59, 0.4) 100%
       ),
-      url("./images/tab/Slider_tab.jpg");
+      url("../images/tab/Slider_tab.jpg");
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -73,7 +73,7 @@
           rgba(48, 49, 59, 0.4) 0%,
           rgba(48, 49, 59, 0.4) 100%
         ),
-        url(./images/tab/Slider_tabx2.jpg);
+        url(../images/tab/Slider_tabx2.jpg);
     }
   }
 }
@@ -86,7 +86,7 @@
         rgba(48, 49, 59, 0.4) 0%,
         rgba(48, 49, 59, 0.4) 100%
       ),
-      url("./images/desktop/Slider_desk.jpg");
+      url("../images/desktop/Slider_desk.jpg");
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -97,7 +97,7 @@
           rgba(48, 49, 59, 0.4) 0%,
           rgba(48, 49, 59, 0.4) 100%
         ),
-        url(./images/desktop/Slider_deskx2.jpg);
+        url(../images/desktop/Slider_deskx2.jpg);
     }
   }
   .slider__text {
