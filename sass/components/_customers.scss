@@ -11,6 +11,7 @@
     // width: 100%;
     margin: 0;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   &__h2 {
     display: flex;
@@ -18,13 +19,14 @@
     align-items: center;
     padding-bottom: 30px;
   }
-}
-.clients-logo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-around;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+  }
   // flex-basis: calc((100% - 30px) / 2);
 
   &__element {
@@ -46,27 +48,43 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients-logo__element {
-    flex-basis: calc((100% - 60px) / 3);
-  }
-}
-@media screen and (min-width: 1200px) {
   .customers {
+    width: 100%;
     display: flex;
     &__container {
       max-width: 1170px;
       margin: 0 auto;
-      padding: 94px 0;
+      padding: 94px 0 60px 0;
     }
-  &__h2{padding-bottom: 50px;}
-  }
+    &__h2 {
+      padding-bottom: 50px;
+    }
 
-  .clients-logo {
+    &__element {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    width: 100%;
     display: flex;
-    margin-left: 15px;
-    flex-wrap: nowrap;
-    gap: 30px;
-    justify-content: center;
+    &__container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 94px 0 60px 0;
+    }
+    &__h2 {
+      padding-bottom: 50px;
+    }
+
+    &__logo {
+      display: flex;
+      margin-left: 15px;
+      flex-wrap: nowrap;
+      gap: 30px;
+      justify-content: center;
+    }
 
     &__element {
       width: 170px;

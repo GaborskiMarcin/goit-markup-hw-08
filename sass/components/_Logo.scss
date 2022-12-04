@@ -1,10 +1,7 @@
 .header__logo {
-  position: absolute;
+  
   width: 149px;
   height: 28px;
-  left: 15px;
-  top: 16px;
-
   color: color("activ_button");
 
   @include font-styles("Raleway", normal, 700, 24px, 28px, 0.03em);
@@ -23,12 +20,12 @@
   }
 }
 
-@media screen and (min-width: $mobile) {
-  .header__logo {
-    position: static;
-    display: flex;
-  }
-}
+// @media screen and (min-width: $mobile) {
+//   .header__logo {
+//     position: static;
+//     display: flex;
+//   }
+// }
 @media screen and (min-width: 768px) {
   .header__logo {
     position: static;

@@ -32,7 +32,7 @@
               <nav>
                 <ul class="header__menu">
                   <li class="menu__item menu__item--current-page">
-                    <a class="menu__lebel" testhref="./index.html">Agencja </a>
+                    <a class="menu__lebel" href="./index.html">Agencja </a>
                   </li>
                   <li class="menu__item">
                     <a class="menu__lebel" href="./portfolio.html">Portfolio</a>
@@ -79,7 +79,12 @@
           <ul class="benefits__list">
             <li class="benefits__item">
               <div class="benefits__img">
-                <svg width="70" height="70" viewBox="0 0 32 32">
+                <svg
+                  class="benefits__icon"
+                  width="70"
+                  height="70"
+                  viewBox="0 0 32 32"
+                >
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
@@ -557,33 +562,33 @@
       <section class="customers">
         <div class="customers__container container">
           <h2 class="customers__h2">Nasi klienci</h2>
-          <ul class="clients-logo">
-            <li class="clients-logo__element">
+          <ul class="customers__logo">
+            <li class="customers__element">
               <svg width="106" height="60" viewBox="0 0 56 32">
                 <use href="./images/icons.svg#icon-Logo"></use>
               </svg>
             </li>
-            <li class="clients-logo__element">
+            <li class="customers__element">
               <svg width="106" height="60" viewBox="0 0 56 32">
                 <use href="./images/icons.svg#icon-Logo1"></use>
               </svg>
             </li>
-            <li class="clients-logo__element">
+            <li class="customers__element">
               <svg width="106" height="60" viewBox="0 0 56 32">
                 <use href="./images/icons.svg#icon-Logo2"></use>
               </svg>
             </li>
-            <li class="clients-logo__element">
+            <li class="customers__element">
               <svg width="106" height="60" viewBox="0 0 57 32">
                 <use href="./images/icons.svg#icon-Logo3" x="18,92"></use>
               </svg>
             </li>
-            <li class="clients-logo__element">
+            <li class="customers__element">
               <svg width="106" height="60" viewBox="0 0 56 32">
                 <use href="./images/icons.svg#icon-Logo4"></use>
               </svg>
             </li>
-            <li class="clients-logo__element">
+            <li class="customers__element">
               <svg width="106" height="60" viewBox="0 0 56 32">
                 <use href="./images/icons.svg#icon-Logo5"></use>
               </svg>
@@ -761,12 +766,10 @@
             <button class="modal__button" type="submit">Wyślij</button>
           </form>
           <button class="backdrop__close-button" type="button" data-modal-close>
-            <svg width="30px" height="30px">
-              <use
-                x="4"
-                y="8.5"
-                width="10px"
-                height="10px"
+            <svg class="backdrop__icon" width="30px" height="30px">
+              <use 
+                width="12px"
+                height="12px"
                 href="./images/icons.svg#icon-cross"
               ></use>
             </svg>
