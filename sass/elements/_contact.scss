@@ -1,0 +1,49 @@
+.contact {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    padding-left: 101px;
+
+    &__container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      // gap: 10px;
+      // padding-right: 15px;
+    }
+    &__item {
+      @include font-styles("Roboto", normal, 500, 12px, 14px, 0.02em);
+      color: color("text");
+      cursor: pointer;
+      justify-content: space-between;
+    }
+
+    &:hover {
+      fill: color("activ_button");
+      color: color("activ_button");
+
+      text-decoration-color: color("activ_button");
+    }
+    &:active {
+      fill: color("activ_button");
+      color: color("activ_button");
+      text-decoration-color: color("activ_button");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding-left: 330px;
+    &__container {
+      flex-direction: row;
+      gap: 30px;
+    }
+    &__item {
+      @include font-styles("Roboto", normal, 500, 14px, 16px, 0.02em);
+    }
+  }
+}

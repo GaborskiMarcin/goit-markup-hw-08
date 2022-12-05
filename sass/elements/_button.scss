@@ -1,0 +1,15 @@
+.button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  border-style: none;
+  color: color("third_font");
+  background-color: color("activ_button");
+  @include font-styles("Roboto", normal, 700, 16px, 30px, 0.06em);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  &:hover {
+    cursor: pointer;
+    background-color: #4c9fe4;
+  }
+}

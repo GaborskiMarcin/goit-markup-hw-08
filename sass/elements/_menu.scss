@@ -1,0 +1,44 @@
+.menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    &__container {
+      // min-width: 606px;
+      display: flex;
+      align-items: center;
+    }
+    &__item {
+      align-items: baseline;
+      justify-content: space-between;
+      &:hover {
+        color: color("activ_button");
+      }
+      &:active {
+        color: color("activ_button");
+      }
+    }
+    &__item--current-page {
+      color: color("activ_button");
+      position: relative;
+    }
+    &__item--current-page::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: -34px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      border: 2px solid color("activ_button");
+      background-color: color("activ_button");
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+}

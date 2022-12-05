@@ -11,7 +11,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 ul {
@@ -25,24 +24,15 @@ a {
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -67,14 +57,6 @@ a {
 }
 .header__mobile:hover {
   fill: #2196f3;
-}
-
-.contact {
-  display: none;
-}
-
-.menu {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -109,72 +91,6 @@ a {
     width: 282px;
     justify-content: space-between;
   }
-  .menu {
-    display: flex;
-    height: 80px;
-    align-items: center;
-  }
-  .menu__container {
-    display: flex;
-    align-items: center;
-  }
-  .menu__item {
-    align-items: baseline;
-    justify-content: space-between;
-  }
-  .menu__item:hover {
-    color: #2196f3;
-  }
-  .menu__item:active {
-    color: #2196f3;
-  }
-  .menu__item--current-page {
-    color: #2196f3;
-    position: relative;
-  }
-  .menu__item--current-page::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: -34px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    border: 2px solid #2196f3;
-    background-color: #2196f3;
-  }
-  .contact {
-    display: flex;
-    padding-left: 101px;
-  }
-  .contact__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .contact__item {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    color: #757575;
-    cursor: pointer;
-    justify-content: space-between;
-  }
-  .contact__item:hover {
-    fill: #2196f3;
-    color: #2196f3;
-    text-decoration-color: #2196f3;
-  }
-  .contact__item:active {
-    fill: #2196f3;
-    color: #2196f3;
-    text-decoration-color: #2196f3;
-  }
 }
 @media screen and (min-width: 1200px) {
   .header__container {
@@ -182,21 +98,6 @@ a {
   }
   .header__menu {
     margin-left: 93px;
-  }
-  .contact {
-    padding-left: 330px;
-  }
-  .contact__container {
-    flex-direction: row;
-    gap: 30px;
-  }
-  .contact__item {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
   }
 }
 .header__logo {
@@ -263,27 +164,6 @@ a {
   line-height: 42px;
   letter-spacing: 0.06em;
   color: #ffffff;
-}
-
-.button {
-  width: 200px;
-  height: 50px;
-  margin-top: 30px;
-  border-style: none;
-  color: #ffffff;
-  background-color: #2196f3;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-.button:hover {
-  cursor: pointer;
-  background-color: #4c9fe4;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -378,17 +258,15 @@ a {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .benefits {
     width: 100%;
     display: flex;
-    justify-content: center;
   }
   .benefits__container {
     max-width: 1199px;
   }
   .benefits__list {
-    display: flex;
     width: 100%;
     gap: 30px;
     flex-wrap: wrap;
@@ -422,7 +300,6 @@ a {
     padding: 94px;
   }
   .benefits__list {
-    display: flex;
     width: 100%;
     gap: 30px;
     flex-wrap: nowrap;
@@ -437,19 +314,12 @@ a {
   }
   .benefits__title {
     width: 270px;
-    padding: 30px 0 10px 0;
-    display: flex;
-    align-items: flex-start;
   }
   .benefits__text {
     width: 270px;
   }
 }
 .offer {
-  display: none;
-}
-
-.photo-list {
   display: none;
 }
 
@@ -469,25 +339,27 @@ a {
     font-size: 36px;
     padding-bottom: 50px;
   }
-  .photo-list {
+  .offer__list {
     display: flex;
     padding-bottom: 94px;
     justify-content: center;
   }
-  .photo-list__element {
+  .offer__element {
+    width: 370px;
+    height: 294px;
     position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     display: flex;
   }
-  .photo-list__text {
+  .offer__text {
     position: absolute;
     top: 224px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 370px;
+    width: 100%;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
     font-style: normal;
@@ -527,8 +399,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-
-.person-card {
+.team__card {
   max-width: 100%;
   height: 622px;
   background: #ffffff;
@@ -540,11 +411,11 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
-.person-card__item {
+.team__item {
   display: flex;
   flex-flow: column;
 }
-.person-card__name {
+.team__name {
   display: flex;
   justify-content: center;
   font-family: "Roboto";
@@ -558,7 +429,7 @@ a {
   padding-top: 30px;
   padding-bottom: 10px;
 }
-.person-card__position {
+.team__position {
   display: flex;
   justify-content: center;
   font-family: "Roboto";
@@ -571,7 +442,7 @@ a {
   color: #757575;
   padding-bottom: 16px;
 }
-.person-card__img {
+.team__img {
   width: 450px;
   height: 460px;
 }
@@ -605,12 +476,12 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
-  .person-card {
+  .team__card {
     width: 354px;
     height: 536px;
     flex-basis: calc((100% - 30px) / 2);
   }
-  .person-card__img {
+  .team__img {
     max-width: 100%;
     height: auto;
   }
@@ -647,7 +518,7 @@ a {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .person-card {
+  .team__card {
     width: 270px;
     height: 428px;
     display: flex;
@@ -655,13 +526,13 @@ a {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .person-card__item {
+  .team__item {
     display: flex;
     flex-flow: column;
     width: 270px;
     height: 428px;
   }
-  .person-card__name {
+  .team__name {
     display: flex;
     font-size: 16px;
     font-weight: 500;
@@ -669,7 +540,7 @@ a {
     padding-top: 30px;
     padding-bottom: 10px;
   }
-  .person-card__position {
+  .team__position {
     display: flex;
     justify-content: center;
     font-size: 16px;
@@ -677,7 +548,7 @@ a {
     color: #757575;
     padding-bottom: 16px;
   }
-  .person-card__img {
+  .team__img {
     width: 270px;
     height: 260px;
   }
@@ -711,6 +582,10 @@ a {
 .media__icon--footer {
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  justify-content: space-between;
 }
 
 .customers {
@@ -987,7 +862,7 @@ a {
     padding-top: 72px;
   }
   .newsletter__input {
-    max-width: 358px;
+    width: 358px;
   }
   .newsletter__form {
     position: relative;
@@ -1008,7 +883,6 @@ a {
   }
   .newsletter__button {
     width: 200px;
-    margin-left: 12px;
     margin-bottom: 0;
     padding-top: 0px;
   }
@@ -1546,4 +1420,120 @@ a {
 
 .projects__item > img:hover {
   border: 2px solid #2196f3;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    height: 80px;
+    align-items: center;
+  }
+  .menu__container {
+    display: flex;
+    align-items: center;
+  }
+  .menu__item {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .menu__item:hover {
+    color: #2196f3;
+  }
+  .menu__item:active {
+    color: #2196f3;
+  }
+  .menu__item--current-page {
+    color: #2196f3;
+    position: relative;
+  }
+  .menu__item--current-page::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -34px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    border: 2px solid #2196f3;
+    background-color: #2196f3;
+  }
+}
+.contact {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    padding-left: 101px;
+  }
+  .contact__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .contact__item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+  .contact:hover {
+    fill: #2196f3;
+    color: #2196f3;
+    text-decoration-color: #2196f3;
+  }
+  .contact:active {
+    fill: #2196f3;
+    color: #2196f3;
+    text-decoration-color: #2196f3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding-left: 330px;
+  }
+  .contact__container {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .contact__item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+.button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  border-style: none;
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #4c9fe4;
 }/*# sourceMappingURL=main.css.map */

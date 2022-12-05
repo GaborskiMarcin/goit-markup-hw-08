@@ -1,5 +1,4 @@
 .media {
-  
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -19,13 +18,14 @@
       background-color: color("activ_button");
       cursor: pointer;
     }
-    
   }
 }
-.media__icon--footer{
-  @extend .media__icon; 
+.media__icon--footer {
+  @extend .media__icon;
   fill: color("third_font");
-      background-color: color("background-icon");
+  background-color: color("background-icon");
 }
 
-
+.icon {
+  justify-content: space-between;
+}
