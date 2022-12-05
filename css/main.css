@@ -1007,6 +1007,7 @@ a {
     flex-wrap: nowrap;
   }
   .newsletter__button {
+    width: 200px;
     margin-left: 12px;
     margin-bottom: 0;
     padding-top: 0px;
