@@ -34,7 +34,6 @@
   }
   &__icon {
     display: flex;
-   
   }
   &__title {
     padding: 30px 105px 10px 105px;
@@ -51,7 +50,7 @@
   }
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   .benefits {
     width: 100%;
     display: flex;
@@ -66,10 +65,10 @@
       flex-wrap: wrap;
       flex-direction: row;
     }
-    &__img {
-      width: 354px;
-      
-    }
+    // &__img {
+    //   width: 354px;
+
+    // }
     &__item {
       flex-basis: calc((100% - 30px) / 2);
 
@@ -96,7 +95,6 @@
       padding: 94px;
     }
     &__list {
-      
       width: 100%;
       gap: 30px;
       flex-wrap: nowrap;
@@ -105,13 +103,13 @@
     }
     &__img {
       width: 270px;
-          }
+    }
     &__item {
       width: 100%;
     }
     &__title {
       width: 270px;
-     }
+    }
     &__text {
       width: 270px;
     }

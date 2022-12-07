@@ -4,7 +4,7 @@
 @media screen and (min-width: 768px) {
   .contact {
     display: flex;
-    padding-left: 101px;
+    padding-left: 50px;
 
     &__container {
       width: 100%;
@@ -19,22 +19,21 @@
       color: color("text");
       cursor: pointer;
       justify-content: space-between;
+      &:hover {
+        fill: color("activ_button");
+        color: color("activ_button");
+        text-decoration-color: color("activ_button");
+      }
+      &:active {
+        fill: color("activ_button");
+        color: color("activ_button");
+        text-decoration-color: color("activ_button");
+      }
     }
 
-    &:hover {
-      fill: color("activ_button");
-      color: color("activ_button");
 
-      text-decoration-color: color("activ_button");
-    }
-    &:active {
-      fill: color("activ_button");
-      color: color("activ_button");
-      text-decoration-color: color("activ_button");
-    }
   }
 }
-
 @media screen and (min-width: 1200px) {
   .contact {
     padding-left: 330px;
