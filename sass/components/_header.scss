@@ -5,12 +5,12 @@
   justify-content: space-between;
   align-items: center;
   &__container {
-  //   // max-width: 100%;
-  //   // min-width: 320px;
-  //   // margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    //   // max-width: 100%;
+    //   // min-width: 320px;
+    //   // margin: 0 auto;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
   }
   &__mobile {
     // position: absolute;
@@ -48,11 +48,11 @@
     &__mobile {
       display: none;
     }
-    &__container {
-      width: 768px;
-      height: 80px;
-      align-items: center;
-    }
+    // &__container {
+    //   width: 768px;
+    //   height: 80px;
+    //   align-items: center;
+    // }
     &__menu {
       @include set-flex(row, center, center);
       @include font-styles("Roboto", normal, 500, 14px, 16px, 0.02em);
@@ -66,9 +66,9 @@
 }
 @media screen and (min-width: 1200px) {
   .header {
-    &__container {
-      width: 1200px;
-    }
+    // &__container {
+    //   width: 1200px;
+    // }
     &__menu {
       margin-left: 93px;
     }

@@ -2,13 +2,10 @@
   display: flex;
   justify-content: center;
   min-width: 320px;
-
-  &__container {
-    max-width: 480px;
-    width: 100%;
-    @include set-flex(column, center, center);
+     @include set-flex(column, center, center);
     padding-top: 60px;
-  }
+
+ 
   &__list {
     display: flex;
     max-width: 100%;
@@ -55,9 +52,8 @@
     width: 100%;
     display: flex;
     // justify-content: center;
-    &__container {
-      max-width: 1199px;
-    }
+    max-width: 1199px;
+   
     &__list {
       // display: flex;
       width: 100%;
@@ -90,10 +86,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    &__container {
-      width: 1200px;
-      padding: 94px;
-    }
+    padding: 94px;
+    
     &__list {
       width: 100%;
       gap: 30px;
