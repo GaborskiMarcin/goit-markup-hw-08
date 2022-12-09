@@ -22,11 +22,11 @@
   height: 40px;
   fill: black;
   top: 10px;
- 
 }
 .mobile__svg-focus:hover,
 .mobile__svg-focus:focus {
   fill: color("activ_button");
+  cursor: pointer;
 }
 .mobile__navigation {
   position: absolute;
@@ -69,10 +69,10 @@
   position: absolute;
   left: 40px;
   bottom: 254px;
-  @include font-styles('roboto', normal, 500, 34px, 40px, 0.02em);
- 
+  @include font-styles("roboto", normal, 500, 34px, 40px, 0.02em);
+
   text-decoration: none;
-  
+
   color: color("activ_button");
 }
 .mobile__contact-mail {
@@ -81,10 +81,10 @@
   bottom: 194px;
   display: flex;
   align-items: center;
-  @include font-styles('roboto', normal, 500, 24px, 28px, 0.02em);
-  
+  @include font-styles("roboto", normal, 500, 24px, 28px, 0.02em);
+
   color: color("basic_font");
-  
+
   text-decoration: none;
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -1172,6 +1172,7 @@ a {
 .mobile__svg-focus:hover,
 .mobile__svg-focus:focus {
   fill: #2196f3;
+  cursor: pointer;
 }
 
 .mobile__navigation {
