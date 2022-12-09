@@ -32,12 +32,12 @@ a {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -56,6 +56,8 @@ a {
 .header__mobile {
   width: 40px;
   height: 40px;
+  background-color: transparent;
+  border-color: transparent;
 }
 .header__mobile:hover {
   fill: #2196f3;
@@ -67,6 +69,7 @@ a {
     align-items: center;
     width: 100%;
     height: 80px;
+    justify-content: space-around;
   }
   .header__mobile {
     display: none;
@@ -85,7 +88,6 @@ a {
     color: #212121;
     margin-left: 83px;
     gap: 60px;
-    width: 282px;
     justify-content: space-between;
   }
 }
@@ -139,9 +141,9 @@ a {
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
-  background-size: 480px 400px;
+  background-size: cover;
   background-position: center;
-  background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../images/mobile/Slider_mo.jpg");
+  background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../images/studio/Headermo@1x.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,7 +164,7 @@ a {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .slider__container {
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(../images/mobile/Slider_mox2.jpg);
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../images/studio/Headermo@2x.jpg");
   }
 }
 @media screen and (min-width: 480px) {
@@ -172,25 +174,24 @@ a {
 }
 @media screen and (min-width: 768px) {
   .slider__container {
-    background-size: 768px 400px;
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../images/tab/Slider_tab.jpg");
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("/images/studio/Headertab@1x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .slider__container {
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(../images/tab/Slider_tabx2.jpg);
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("/images/studio/Headertab@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
   .slider__container {
     height: 600px;
-    background-size: 1200px 600px;
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("../images/desktop/Slider_desk.jpg");
+    max-width: 1600px;
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("/images/studio/Headerdes@1x.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .slider__container {
-    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url(../images/desktop/Slider_deskx2.jpg);
+    background-image: linear-gradient(0deg, rgba(48, 49, 59, 0.4) 0%, rgba(48, 49, 59, 0.4) 100%), url("/images/studio/Headerdes@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -213,6 +214,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .benefits__list {
   display: flex;
@@ -223,7 +225,6 @@ a {
 }
 .benefits__item {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -235,6 +236,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .benefits__icon {
   display: flex;
@@ -284,7 +286,8 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .benefits__list {
     width: 100%;
@@ -1417,12 +1420,15 @@ a {
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
+    width: 100%;
     height: 80px;
     align-items: center;
   }
   .menu__container {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
   .menu__item {
     align-items: baseline;

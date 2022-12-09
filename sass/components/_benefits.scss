@@ -2,20 +2,21 @@
   display: flex;
   justify-content: center;
   min-width: 320px;
-     @include set-flex(column, center, center);
-    padding-top: 60px;
+  @include set-flex(column, center, center);
+  padding-top: 60px; 
+  padding-bottom: 60px; 
 
- 
   &__list {
     display: flex;
     max-width: 100%;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+    
   }
   &__item {
     display: flex;
-    align-items: center;
+    
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -28,6 +29,8 @@
     justify-content: center;
     align-items: center;
     background-color: color("button");
+    // border: 2px solid aqua;
+    border-radius: 4px;
   }
   &__icon {
     display: flex;
@@ -53,13 +56,14 @@
     display: flex;
     // justify-content: center;
     max-width: 1199px;
-   
+
     &__list {
       // display: flex;
       width: 100%;
       gap: 30px;
       flex-wrap: wrap;
       flex-direction: row;
+   
     }
     // &__img {
     //   width: 354px;
@@ -67,8 +71,9 @@
     // }
     &__item {
       flex-basis: calc((100% - 30px) / 2);
-
       width: 100%;
+      // padding-left: 15px;
+      // padding-right: 15px;
     }
     &__title {
       width: 354px;
@@ -86,8 +91,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 94px;
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     &__list {
       width: 100%;
       gap: 30px;
