@@ -396,7 +396,7 @@ a {
   align-items: center;
 }
 .team__card {
-  max-width: 100%;
+  max-width: calc(100% - 30px);
   height: auto;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -447,6 +447,86 @@ a {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 480px) {
+  .team {
+    display: flex;
+    min-width: 320px;
+    width: 100%;
+    background-color: #f5f4fa;
+  }
+  .team__container {
+    width: 100%;
+    padding: 94px 0;
+  }
+  .team__h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+  }
+  .team__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .team__card {
+    max-width: 100%;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .team__item {
+    display: flex;
+    flex-flow: column;
+  }
+  .team__name {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-family: "Roboto";
+    font-style: normal;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .team__position {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    color: #757575;
+    padding-bottom: 16px;
+  }
+  .team__img {
+    width: 100%;
+    height: auto;
+  }
+  .icon {
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
     position: relative;
@@ -475,7 +555,6 @@ a {
   .team__card {
     width: 354px;
     height: auto;
-    flex-basis: calc((100% - 30px) / 2);
   }
   .team__img {
     max-width: 100%;
@@ -1265,43 +1344,6 @@ a {
   .modal__button:hover {
     cursor: pointer;
     background-color: #7cb4e2;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    border-radius: 4px;
-    margin: auto;
-    width: 528px;
-    height: 581px;
-  }
-  .modal__input {
-    width: 448px;
-    height: 40px;
-    padding-left: 40px;
-  }
-  .modal__input--textar {
-    width: 448px;
-    height: 120px;
-    padding: 12px 16px;
-  }
-  .modal__icon--person {
-    top: 107px;
-  }
-  .modal__icon--phon {
-    top: 174.28px;
-  }
-  .modal__icon--mail {
-    top: 243px;
-  }
-  .modal__checkbox {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-  .modal__button {
-    top: 491px;
-    left: 164px;
   }
 }
 .js-menu-container {
