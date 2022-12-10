@@ -155,9 +155,9 @@
   padding-left: 0px;
   display: flex;
   align-items: center;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 3%;
+  font-size: 10px;
+  line-height: 12px;
+
   color: color("text");
 
   &::before {
@@ -245,8 +245,9 @@
       width: 370px;
       height: 40px;
       &--textar {
-      height: 120px;
-    }}
+        height: 120px;
+      }
+    }
     &__label {
       margin-left: 0px;
       margin-right: 0px;
