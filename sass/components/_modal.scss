@@ -244,7 +244,9 @@
     &__input {
       width: 370px;
       height: 40px;
-    }
+      &--textar {
+      height: 120px;
+    }}
     &__label {
       margin-left: 0px;
       margin-right: 0px;

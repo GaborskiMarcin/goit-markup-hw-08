@@ -384,7 +384,7 @@ a {
   background-color: #f5f4fa;
 }
 .team__container {
-  width: 100%;
+  width: calc(100% - 5px);
   padding: 94px 0;
 }
 .team__h2 {
@@ -1214,6 +1214,9 @@ a {
   .modal__input {
     width: 370px;
     height: 40px;
+  }
+  .modal__input--textar {
+    height: 120px;
   }
   .modal__label {
     margin-left: 0px;
